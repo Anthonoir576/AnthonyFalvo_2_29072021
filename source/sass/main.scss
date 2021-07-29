@@ -58,22 +58,24 @@ header {
                 & a {
 
                     display: block;
+                    padding: 30px 30px 0 30px;
 
                     font-size: 18px;
 
-                    padding: 10px;
-                    border: 3px solid white;
+                    // la bordure transparente me permet de pallié le problème de décallage a l'intégration de la bordure bleu sur l'élément ACTIVE, ainsi que les effets indésirables, lors de l'intégration d'animation
+                    border: 3px solid transparent;
                     
 
-                    // La classe peut etre réatribué en js avec un listener au click
+                    // La classe peut etre réatribué en js avec un listener au click, la bordure j'ai préféré la faire de cette facon, qu'avec un before.
                     &.active {
 
                         border-top: 3px solid $skyBlue;
                         color: $skyBlue;
-                        padding-top: 10px;
+                        
 
                     }
 
+                    // Inscription 
                     &.signup {
 
                         color: $skyBlue;
