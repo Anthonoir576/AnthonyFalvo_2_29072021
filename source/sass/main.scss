@@ -12,14 +12,81 @@ $grey: #72727272;
 
     box-sizing: border-box;
 
+
+    // default
+    list-style-type: none;
+    text-decoration: none;
+
+    color: black;
+    font-size: 16px;
+
 }
 
 // ########## Body ##################
 // overflow-x pour pallié le problème de saut d'image sur de l'animation en translate ou autre.
-html,
 body {
+
+    margin: 0.05rem 2rem;
 
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
-    
-} 
+
+}
+
+header {
+
+    & nav {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        & ul {
+
+            height: 100%;
+
+            display: flex;
+            justify-content: space-between;
+
+            list-style-type: none;
+
+            & li {
+
+                margin-right: 4rem;
+
+                & a {
+
+                    display: block;
+
+                    font-size: 18px;
+
+                    padding: 10px;
+                    border: 3px solid white;
+                    
+
+                    // La classe peut etre réatribué en js avec un listener au click
+                    &.active {
+
+                        border-top: 3px solid $skyBlue;
+                        color: $skyBlue;
+                        padding-top: 10px;
+
+                    }
+
+                    &.signup {
+
+                        color: $skyBlue;
+                        font-weight: bold;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
