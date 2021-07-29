@@ -1,4 +1,5 @@
-// ######### RESET #################
+// ######### RESET AND BORDER BOX #################
+// Stop du comportement par défaut 
 * {
 
     padding: 0;
@@ -8,11 +9,12 @@
 
 }
 
-// ########## CSS ##################
+// ########## Body ##################
+// overflow-x pour pallié le problème de saut d'image sur de l'animation en translate ou autre.
 html,
 body {
 
     overflow-x: hidden;
-    font-family: 'Josefin Sans', 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     
 } 
