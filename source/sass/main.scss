@@ -1,7 +1,7 @@
 // VARIABLES 
 $skyBlue: #0065fc;
 $lowBlue: #deebff;
-$grey: #72727272;
+$grey: #f2f2f2f2;
 
 // ######### RESET AND BORDER BOX #################
 // Stop du comportement par défaut 
@@ -104,6 +104,44 @@ header {
 
             font-size: 21px;
             margin-bottom: 1.2rem;
+
+        }
+
+        .intro-searchbar {
+
+            display: flex;
+            border: 1px solid $grey;
+            border-radius: 10px;
+            background: $grey;
+            width: 355px;
+
+            & i {
+
+                padding: 10px 21px 10px 20px;
+                font-size: 25px;
+
+            }
+
+            & input {
+
+                padding-left: 15px;
+                color: black;
+                height: 50px;
+                border: none;
+
+            }
+
+            & button {
+
+                cursor: pointer;
+
+                padding: 10px 20px;
+                border: none;
+                border-radius: 0 10px 10px 0;
+                background: $skyBlue;
+                color: white;
+
+            }
 
         }
 
