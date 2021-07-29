@@ -18,12 +18,12 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 }
 header nav ul {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  list-style-type: none;
 }
 header nav ul li {
   margin-right: 4rem;
