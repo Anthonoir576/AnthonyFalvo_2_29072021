@@ -71,8 +71,7 @@ header {
                     &.active {
 
                         border-top: 3px solid $skyBlue;
-                        color: $skyBlue;
-                        
+                        color: $skyBlue;  
 
                     }
 
@@ -87,6 +86,24 @@ header {
                 }
 
             }
+
+        }
+
+    }
+
+    & .intro {
+
+        & h1 {
+
+            font-size: 30px;
+            margin-bottom: .5rem;
+
+        }
+
+        & > p {
+
+            font-size: 21px;
+            margin-bottom: 1.2rem;
 
         }
 
