@@ -16,9 +16,9 @@ body {
 
 header nav {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "logo logo logo nav";
+  grid-template-areas: "logo nav";
   margin-bottom: 2rem;
 }
 header nav .navbar-logo {
@@ -131,7 +131,6 @@ header .intro .intro-filter p:hover {
   filter: saturate(350%);
   background: #deebff;
   color: rgba(0, 0, 0, 0.671);
-  font-weight: 800;
 }
 header .intro .intro-filter p:nth-child(3) > i {
   padding: 15px 18px;
@@ -155,6 +154,57 @@ header .intro .intro-info i {
   padding: 5px 10px;
   position: relative;
   top: -2px;
+}
+
+main {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "article aside";
+}
+main article {
+  grid-area: article;
+  background: #f2f2f2f2;
+  border-radius: 25px;
+  padding: 25px;
+}
+main article h2 {
+  font-size: 25px;
+  margin: 1rem 0 1.5rem 0.7rem;
+}
+main article .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+}
+main article .cards .card {
+  border-radius: 15px;
+  background: white;
+  max-width: 300px;
+  padding: 5px;
+  text-align: center;
+}
+main article .cards .card .card-img {
+  object-fit: cover;
+  max-width: 280px;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+main article .cards .card .card-title {
+  text-align: left;
+}
+main article .cards .card .card-text {
+  text-align: left;
+}
+main article .cards .card .card-stars {
+  text-align: left;
+}
+main aside {
+  grid-area: aside;
 }
 
 /*# sourceMappingURL=style.css.map */
