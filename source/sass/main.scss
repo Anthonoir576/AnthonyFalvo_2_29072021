@@ -312,13 +312,12 @@ main {
 
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
     grid-template-rows: 1fr;
-    grid-template-areas: 
-        "article aside";
+  
 
     & article {
 
-        grid-area: article;
         background: $grey;
 
         border-radius: 25px;
@@ -327,39 +326,153 @@ main {
 
         & h2 {
 
-            font-size: 25px;
+            font-size: 29px;
             margin: 1rem 0 1.5rem .7rem;
 
         }
-        
 
+        & .article-link {
+
+            margin: 2rem 0 0 1rem;
+
+            font-weight: 800;
+            font-size: 1.1rem;
+
+        }
+
+    }
+
+    .cards {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+
+        justify-items: center;
+        align-items: center;
+
+        & .card {
+            
+            cursor: pointer;
+            transition: .5s;
+
+            border-radius: 15px;
+            background: white;
+            max-width:  100%;
+            padding: 5px;
+
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.205);
+
+            text-align: center;
+
+            &:hover {
+
+                transition: .4s;
+                transform: scale(1.05);
+                box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.342);
+
+            }
+
+            .card-img {
+
+                object-fit: cover;
+                max-width: 100%;
+                height: auto;
+
+                border-radius: 15px 15px 0 0;
+
+            }
+
+            .card-title {
+
+                text-align: left;
+
+            }
+
+            .card-text {
+
+                text-align: left;
+
+            }
+
+            .card-stars {
+
+                text-align: left;
+
+            }
+
+        }
+
+    }
+
+    & aside {
+
+        background: $grey;
+
+        border-radius: 25px;
+
+        padding: 25px;
+
+        & .aside-title {
+
+            display: flex;
+            justify-content: space-between;
+            
+
+            & h3, i {
+
+                margin: 1rem 0 2rem 0;
+                font-size: 29px;
+
+            }
+
+        }
+    
         & .cards {
 
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            justify-items: center;
-            align-items: center;
-            grid-template-areas: 
-                "card1 card2 card3"
-                "card4 card5 card6";
-
-            & .card {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            justify-items:stretch;
             
+            
+
+            
+            & .card {
+
+                display: flex;
+
+                cursor: pointer;
+                transition: .5s;
+
                 border-radius: 15px;
                 background: white;
-                max-width: 300px;
+                max-width:  100%;
                 padding: 5px;
+
+                box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.205);
 
                 text-align: center;
 
+                            &:hover {
+
+                transition: .4s;
+                transform: scale(1.05);
+                box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.342);
+
+            }
+
                 .card-img {
 
-                   object-fit: cover;
-                    max-width: 280px;
+                    object-fit: cover;
+                    max-width: 33%;
                     height: auto;
 
-                    border-radius: 15px 15px 0 0;
+                    border-radius: 15px 0 0 15px;
 
                 }
 
@@ -381,16 +494,14 @@ main {
 
                 }
 
-            }
+
+            } 
+
 
         }
 
     }
-
-    & aside {
-
-        grid-area: aside;
-
-    }
     
 }
+
+
