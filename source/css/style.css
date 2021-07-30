@@ -634,17 +634,21 @@ header .intro .intro-info i {
   padding: 5px;
   border-radius: 20px;
   background-color: white;
+  box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.301);
+  transition: 0.9s;
+}
+.card:hover {
+  transition: 0.4s;
+  transform: scale(1.02);
   box-shadow: 0px 5px 20px #999;
 }
-
-.card-img {
+.card .card-img {
   border-radius: 20px 20px 0 0;
   height: 180px;
   position: relative;
   overflow: hidden;
 }
-
-.card-img img {
+.card .card-img img {
   width: 110%;
   position: absolute;
   top: 50%;
