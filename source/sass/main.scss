@@ -26,7 +26,7 @@ $grey: #f2f2f2f2;
 // overflow-x pour pallié le problème de saut d'image sur de l'animation en translate ou autre.
 body {
 
-    margin: 0.05rem 2rem;
+    margin: 0.05rem 4rem;
 
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
@@ -38,18 +38,31 @@ body {
 header {
     
 
-
 // ################################## NAV ########################################
 
     & nav {
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "logo logo logo nav";
+
         margin-bottom: 2rem;
 
+        & .navbar-logo {
+
+            display: grid;
+            grid-area: logo;
+
+            align-self: end;
+
+        }
+
         & ul {
+
+            display: grid;
+            grid-area: nav;
 
             height: 100%;
 
@@ -96,6 +109,8 @@ header {
     }
 
     & .intro {
+
+
 
         & h1 {
 
@@ -189,10 +204,18 @@ header {
         & .intro-filter {
 
             display: flex;
+            justify-content: flex-start;
             align-items: baseline;
+            flex-wrap: wrap;
+
+            width: 100vw;
             
 
             & p {
+
+                cursor: pointer;
+                // transition pour hover 
+                transition: .9s;
 
                 border: 2px solid $grey;
                 border-radius: 30px;
@@ -216,6 +239,17 @@ header {
                     border-radius: 50%;
 
                     padding: 15px;
+
+                }
+
+                // rajout transition - supp au cas ou 
+                &:hover {
+
+                    transition: 1s;
+                    filter: saturate(350%);
+                    background: $lowBlue;
+                    color: rgba(0, 0, 0, 0.671);
+                    font-weight: 800;
 
                 }
 
