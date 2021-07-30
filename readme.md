@@ -22,3 +22,8 @@ ___________________________________
 Vous y trouverez les différents éléments, maquettes, croquies réalisé sur papier, certain éléments on été rajouté par la suite,
 les différentes images, logo utilisé. Les sources CSS, SASS, JS, HTML (Pour les différentes pages),
 font si externe a google font, ou sans CDN, un package JSON pour lancé sass directement avec npm.
+
+
+icon :
+
+- Entièrement importer de font-awesone 

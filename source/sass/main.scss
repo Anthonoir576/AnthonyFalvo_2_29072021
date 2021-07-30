@@ -37,6 +37,8 @@ body {
 // Partie navigation, titre, description, search bar, et filtre.
 header {
 
+// ################################## NAV ########################################
+
     & nav {
 
         display: flex;
@@ -107,6 +109,8 @@ header {
 
         }
 
+// ############################### SEARCH BAR ####################################        
+
         .intro-searchbar {
 
             display: flex;
@@ -163,25 +167,62 @@ header {
                 border-radius: 0 15px 15px 0;
                 background: $skyBlue;
                 color: white;
+
+                transition: .9s;
+
+                // effet en plus - a retirer si besoin
+                // deux transitions sont ajouté, afin cas la disparition du hover il prends un certain temps avant de revenir a sa position initiale
+                &:hover {
+
+                    transition: .3s;
+                    box-shadow: 0 0 4px 1px $skyBlue;
+                    filter: saturate(900%);
+
+                }
   
             }
 
         }
-
+// ################################## FILTRE ########################################
         & .intro-filter {
 
             display: flex;
-            justify-content: flex-start;
             align-items: baseline;
-            width: 67%;
+            
 
             & p {
 
                 border: 2px solid $grey;
                 border-radius: 30px;
-                padding: 15px 25px;
+                padding: 12px 25px 12px 60px;
+
                 
+                font-weight: 700;
                 white-space: nowrap;
+                position: relative;
+
+                // icon font-awesone
+                & i {
+           
+                    position: absolute;
+                    left: -2px;
+                    top: -1px;
+
+                    color: $skyBlue;
+                    background: $lowBlue;
+
+                    border-radius: 50%;
+
+                    padding: 15px;
+
+                }
+
+            }
+
+            // correction appliquer au deuxièmes font-awesone, comportement innatendu par rapport a ca Largeur, hauteur différentes 
+            & p:nth-child(3) > i {
+
+                padding: 15px 18px;
 
             }
 
@@ -193,6 +234,7 @@ header {
 
         }
 
+// ################################## INFO I ########################################
         & .intro-info {
 
             display: flex;
