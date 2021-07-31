@@ -36,7 +36,7 @@ body {
 }
 .intro-filter p:hover {
   transition: 1s;
-  filter: saturate(350%);
+  filter: saturate(100%);
   background: #deebff;
   color: rgba(0, 0, 0, 0.671);
 }
@@ -173,7 +173,7 @@ header .intro .intro-filter p {
 header .intro .intro-filter p i {
   position: absolute;
   left: -2px;
-  top: -1px;
+  top: -3px;
   color: #0065fc;
   background: #deebff;
   border-radius: 50%;
