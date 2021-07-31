@@ -1,11 +1,11 @@
-- Information :
+function() => {'Information :'};
 
 ---------------------
 _________________________________
 
 ***************************************************
 
-- A FAIRE :
+< A FAIRE : />
 
 - Correction des grid
 - Minimisé les lignes inutiles. 
@@ -18,7 +18,7 @@ _________________________________
 
 
 
-- HTML : 
+< HTML : /> 
 
 - Plusieurs liens sont présents "commenter". En temps normal je l'ai enlève, pour minimisé le code. Par soucie de transparence je l'ai est laissé, afin de pouvoir montrer ma façon de travailler.
 
@@ -32,17 +32,17 @@ ___________________________________________
 
 
 
-- Fichier source / racine / maquettes :
+< Fichier source / racine / maquettes : />
 __________________________________________
 
-- Dossier :
+< Dossier : />
 
 - Vous y trouverez les différents éléments, maquettes, croquies réalisé sur papier, certain éléments on été rajouté par la suite, les différentes images, logo utilisé. Les sources CSS, SASS, JS, HTML (Pour les différentes pages, si il y en a), font si externe à google font, ou sans CDN, un package JSON pour lancé sass directement avec npm.
 
 
 
 
-- Arborescence :
+< Arborescence : />
 
 - Dossier projet : 
 
@@ -77,21 +77,21 @@ __________________________________________
 
 
 
-- Icône :
+< Icône : />
 
 - Entièrement importé de font-awesone 
 _________________________________________
 
 
 
-- Organisation :
+< Organisation : />
 
 - CSS / SASS : Les deux fichiers sont présent, par habitude j'ai introduit sass, afin de prendre l'habitude du système 7.1, ainsi prendre les bonnes habitudes. J'utilise SASS depuis environs 7 mois, j'ai prit l'habitude d'utilisé cette technologie, je continue de travaillé mes points faibles sur mes différents projets. Une version uniquement CSS et présente pour le projet, afin de respecté les consignes.
 
 _________________________________________
 
 
-- LES PLUS (Hors consigne du projet) :
+< LES PLUS (Hors consigne du projet) : />
 
 - Pour m'entrainer sur certain aspect du code, j'ai prit la décision d'en faire plus, si le temps me permet. Afin de respecter les différentes consignes du projet les éléments rajouté serront activable / désactivable facilement. Ca permettra de mon coté de mettre en pratique plus de chose, fonctionnalité, animations, script. Et d'un autre coté, rester dans les consignes de l'exercice.
 
