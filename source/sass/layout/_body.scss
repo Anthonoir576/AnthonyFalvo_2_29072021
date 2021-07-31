@@ -1,0 +1,17 @@
+html,
+body {
+
+    overflow-x: hidden;
+    
+}
+
+
+// ########## Body ##################
+// overflow-x pour pallié le problème de saut d'image sur de l'animation en translate ou autre.
+body {
+
+    margin: 0.05rem 4rem;
+
+    overflow-x: hidden;
+
+}

@@ -1,0 +1,61 @@
+
+// card animation pour le survol
+.card {
+
+    transition: .9s;
+
+    // Animation au hover, avec un retour lent
+    &:hover {
+
+        transition: .4s;
+        transform: scale(1.02);
+        //box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.342);
+        box-shadow: 0px 5px 20px #999;
+
+    }
+
+}
+
+
+// Effet sur search bar
+.intro-searchbar {
+
+    & button {
+
+        transition: .9s;
+    
+        // effet en plus - a retirer si besoin
+        // deux transitions sont ajouté, afin cas la disparition du hover il prends un certain temps avant de revenir a sa position initiale
+        &:hover {
+
+            transition: .3s;
+            box-shadow: 0 0 4px 1px $skyBlue;
+            filter: saturate(900%);
+
+        }
+
+    }
+
+}
+
+
+// effet sur filtre de recherche
+.intro-filter {
+
+    & p {
+
+        // transition pour hover 
+        transition: .9s;
+
+        &:hover {
+
+            transition: 1s;
+            filter: saturate(350%);
+            background: $lowBlue;
+            color: rgba(0, 0, 0, 0.671);
+            
+        }
+
+    }
+
+}

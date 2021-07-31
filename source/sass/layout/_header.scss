@@ -1,0 +1,244 @@
+// ######### HEADER #################
+// Partie navigation, titre, description, search bar, et filtre.
+header {
+    
+    // ################################## NAV ########################################   
+    & nav {
+
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "logo nav";
+
+        margin-bottom: 2rem;
+
+        & .navbar-logo {
+
+            display: grid;
+            grid-area: logo;
+
+            align-self: end;
+
+        }
+
+        & ul {
+
+            display: grid;
+            grid-area: nav;
+
+            height: 100%;
+
+            display: flex;
+            justify-content: space-between;
+
+            & li {
+
+                margin-right: 4rem;
+
+                & a {
+
+                    display: block;
+                    padding: 30px 30px 0 30px;
+
+                    font-size: 18px;
+
+                    // la bordure transparente me permet de pallié le problème de décallage a l'intégration de la bordure bleu sur l'élément ACTIVE, ainsi que les effets indésirables, lors de l'intégration d'animation
+                    border: 3px solid transparent;
+                    
+
+                    // La classe peut etre réatribué en js avec un listener au click, la bordure j'ai préféré la faire de cette facon, qu'avec un before.
+                    &.active {
+
+                        border-top: 3px solid $skyBlue;
+                        color: $skyBlue;  
+
+                    }
+
+                    // Inscription 
+                    &.signup {
+
+                        color: $skyBlue;
+                        font-weight: bold;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+    
+    & .intro {
+
+
+
+        & h1 {
+
+            font-size: 28px;
+            margin-bottom: .5rem;
+
+        }
+
+        & > p {
+
+            font-size: 18px;
+            margin-bottom: 2rem;
+
+        }
+
+// ############################### SEARCH BAR ####################################        
+
+        .intro-searchbar {
+
+            display: flex;
+            width: 535px;
+
+            border: 1px solid $grey;
+            border-radius: 15px;
+            background: $grey;
+            
+            margin-bottom: 2rem;
+
+            & i {
+
+                padding: 14px 26px 0px 25px;
+                font-size: 18px;
+
+            }
+
+            & input {
+
+                padding-left: 30px;
+                height: 50px;
+
+                border: none;
+                
+                width: 320px;
+
+                &:focus {
+
+                    outline-style: none;                    
+                    
+                }
+
+                &::placeholder {
+
+                    color: black;
+                    font-weight: 600;
+
+                }
+
+            }
+
+            & button {
+
+                cursor: pointer;
+
+                padding: 10px 0;
+                border: none;
+                font-weight: 500;
+                font-size: 20px;
+
+                width: 150px;
+
+                border-radius: 0 15px 15px 0;
+                background: $skyBlue;
+                color: white;
+    
+            }
+
+        }
+
+        // ################################## FILTRE ########################################
+        & .intro-filter {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            flex-wrap: wrap;
+
+            width: 100vw;
+            
+
+            & p {
+
+                cursor: pointer;
+
+                border: 2px solid $grey;
+                border-radius: 30px;
+                padding: 12px 25px 12px 60px;
+
+                
+                font-weight: 700;
+                white-space: nowrap;
+                position: relative;
+
+                // icon font-awesone
+                & i {
+            
+                    position: absolute;
+                    left: -2px;
+                    top: -1px;
+
+                    color: $skyBlue;
+                    background: $lowBlue;
+
+                    border-radius: 50%;
+
+                    padding: 15px;
+
+                }
+    
+            }
+
+            // correction appliquer au deuxièmes font-awesone, comportement innatendu par rapport a ca Largeur, hauteur différentes 
+            & p:nth-child(3) > i {
+
+                padding: 15px 18px;
+
+            }
+
+            & h2, p {
+
+                margin-right: 1rem;
+
+            }
+
+        }
+
+        // ################################## INFO I ########################################
+        & .intro-info {
+
+            display: flex;
+            align-items: baseline;
+            justify-content: baseline;
+
+            margin-top: 2rem;
+
+            & i {
+
+                margin-right: .7rem;
+
+                background: $grey;
+                border: 1px solid $grey;
+                border-radius: 50%;
+
+                color: $skyBlue;
+                font-size: 12px;
+
+                padding: 5px 10px;
+
+                position: relative;
+                top: -2px;
+
+            }
+
+        }
+
+    }
+    
+}
+ 

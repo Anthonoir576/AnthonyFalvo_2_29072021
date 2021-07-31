@@ -1,0 +1,19 @@
+// ######### RESET AND BORDER BOX #################
+// Stop du comportement par défaut 
+* {
+
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+
+    // default
+    list-style-type: none;
+    text-decoration: none;
+
+    color: black;
+    font-size: 16px;
+
+}
+
