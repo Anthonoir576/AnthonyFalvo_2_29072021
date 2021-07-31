@@ -43,21 +43,21 @@ Arborescence :
 
 - Dossier projet : 
 
-    . index.html
-    . package.json
-    . readme.md
-    . CroquieP2.jpg
+    - index.html
+    - package.json
+    - readme.md
+    - CroquieP2.jpg
 
     - source
         - css
-            . style.css
-            . style.css.map
+            - style.css
+            - style.css.map
         - font
         - html
         - image
             - quatres dossiers contenant LOGO, Favicon, et les différents images du site
         - js
-            . index.js
+            - index.js
         - sass
             - base
             - components
@@ -66,10 +66,10 @@ Arborescence :
             - themes
             - utils 
             - vendors
-            . main.scss
+            - main.scss
         
     - maquettes
-        . deux fichiers png (desktop, mobile)
+        - deux fichiers png (desktop, mobile)
 
 
 
