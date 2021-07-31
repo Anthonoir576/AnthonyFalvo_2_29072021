@@ -1,5 +1,4 @@
 // Selecteur generique pour toute les cards du site, correction possible sur certain element. cette facon de faire, me permet d'ecrire moins de code, et pas répété cette configuration par la suite. Mais de modifier, au cas par cas.
-
 .card {
 
     width: 350px;
@@ -27,5 +26,20 @@
         }
     
     }
+
+}
+
+// couleur etoile vide
+.fa-star {
+
+    color: rgba(0, 0, 0, 0.180);
+
+}
+
+// Couleur étoile pleine
+.star {
+
+    font-weight: bold;
+    color: $skyBlue;
 
 }
