@@ -37,6 +37,40 @@ Dossier :
 - Vous y trouverez les différents éléments, maquettes, croquies réalisé sur papier, certain éléments on été rajouté par la suite, les différentes images, logo utilisé. Les sources CSS, SASS, JS, HTML (Pour les différentes pages, si il y en a), font si externe à google font, ou sans CDN, un package JSON pour lancé sass directement avec npm.
 
 
+
+
+Arborescence :
+
+- Dossier projet : 
+    . index.html
+    . package.json
+    . readme.md
+    . CroquieP2.jpg
+    - source
+        - css
+            . style.css
+            . style.css.map
+        - font
+        - html
+        - image
+            - quatres dossiers contenant LOGO, Favicon, et les différents images du site
+        - js
+            . index.js
+        - sass
+            - base
+            - components
+            - layout
+            - pages
+            - themes
+            - utils 
+            - vendors
+            . main.scss
+    - maquette
+        . deux fichiers png (desktop, mobile)
+
+
+
+
 Icône :
 
 - Entièrement importé de font-awesone 
