@@ -79,7 +79,7 @@ ___________________________________________
 
 _________________________________________
 
-< LES PLUS (Hors consigne du projet) : />
+< LES + (Hors consigne du projet) : />
 ___________________________________________
 
 - Pour m'entrainer sur certain aspect du code, j'ai prit la décision d'en faire plus, si le temps me permet. Afin de respecter les différentes consignes du projet les éléments rajouté serront activable / désactivable facilement. Ca permettra de mon coté de mettre en pratique plus de chose, fonctionnalité, animations, script. Et d'un autre coté, rester dans les consignes de l'exercice.
