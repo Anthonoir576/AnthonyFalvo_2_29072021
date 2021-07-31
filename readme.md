@@ -42,10 +42,12 @@ Dossier :
 Arborescence :
 
 - Dossier projet : 
+
     . index.html
     . package.json
     . readme.md
     . CroquieP2.jpg
+
     - source
         - css
             . style.css
@@ -65,7 +67,8 @@ Arborescence :
             - utils 
             - vendors
             . main.scss
-    - maquette
+        
+    - maquettes
         . deux fichiers png (desktop, mobile)
 
 
