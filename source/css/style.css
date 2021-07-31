@@ -41,6 +41,27 @@ body {
   color: rgba(0, 0, 0, 0.671);
 }
 
+.fa-star {
+  color: rgba(0, 0, 0, 0.18);
+  transition: 0.7s;
+}
+.fa-star:hover {
+  transition: 0.4s all ease;
+  font-weight: bold;
+  color: #0065fc;
+}
+
+.star {
+  font-weight: bold;
+  color: #0065fc;
+  transition: 0.7s;
+}
+.star:hover {
+  transition: 0.4s all ease-out;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.18);
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -201,6 +222,19 @@ header .intro .intro-info i {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.card .card-body {
+  margin: 15px 15px 5px 15px;
+}
+.card h5 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.card p {
+  font-size: 19px;
+  margin-bottom: 9px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.733);
 }
 
 .fa-star {

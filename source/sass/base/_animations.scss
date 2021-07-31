@@ -58,3 +58,39 @@
     }
 
 }
+
+// etoile
+
+// EFFET AU HOVER ETOILE VIDE
+.fa-star {
+
+    color: rgba(0, 0, 0, 0.180);
+
+    transition: .7s;
+
+    &:hover {
+
+        transition: .4s all ease;
+        font-weight: bold;
+        color: $skyBlue;
+
+    }
+
+}
+
+// EFFET AU HOVER ETOILE BLEU
+.star {
+
+    font-weight: bold;
+    color: $skyBlue;
+    transition: .7s;
+
+    &:hover {
+
+        transition: .4s all ease-out;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.180);
+
+    }
+
+}

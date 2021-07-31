@@ -27,8 +27,32 @@
     
     }
 
+    & .card-body {
+
+        margin: 15px 15px 5px 15px;
+
+    }
+
+    & h5 {
+
+        font-size: 22px;
+        margin-bottom: 5px;
+
+    }
+
+    & p {
+
+        font-size: 19px;
+        margin-bottom: 9px;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.733);
+
+    }
+
 }
 
+
+// ############ STARS #########################
 // couleur etoile vide
 .fa-star {
 
