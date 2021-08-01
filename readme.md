@@ -8,9 +8,9 @@ ___________________________________________
 - ☐ Correction des grid
 - ☐ Minimisé les lignes inutiles. 
 - ☐ Refont complete a faire  
-- ☑ <del> Remplir les alt </del> 
 - ☐ Revoir tous le layout probablement. certainement une meilleures facon de faire
-- ☐ Add grand pix au click. Convertion du small / large.
+- ☑ <del> Remplir les alt </del> 
+- ☑ <del> Add grand pix au click. Convertion du small / large. </del>
 - ☑ <del> Correction erreur importante w3c css / html </del>
 - ☑ <del> Correction erreur low w3c css / html  </del>
 -

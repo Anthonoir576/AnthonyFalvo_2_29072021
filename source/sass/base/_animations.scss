@@ -1,4 +1,4 @@
-// ############### HEADER ###################
+// ############### HEADER ##############################
 // Effet sur search bar
 .intro-searchbar {
 
@@ -42,7 +42,7 @@
 
 
 
-// ############### MAIN ###################
+// ############### MAIN ################################
 // card animation pour le survol
 .card {
 
@@ -90,6 +90,26 @@
         transition: .4s all ease-out;
         font-weight: 400;
         color: rgba(0, 0, 0, 0.180);
+
+    }
+
+}
+
+// lien AFFICHER PLUS en bas des cartes Hebergements à ..
+.article-link {
+
+    & p a {
+
+        transition: .3s;
+
+        &:hover {
+
+            transition: .5s;
+            color: rgba(0, 0, 0, 0.800);
+
+            text-decoration: underline;
+        
+        }
 
     }
 

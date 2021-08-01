@@ -62,6 +62,15 @@ body {
   color: rgba(0, 0, 0, 0.18);
 }
 
+.article-link p a {
+  transition: 0.3s;
+}
+.article-link p a:hover {
+  transition: 0.5s;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+}
+
 html,
 body {
   overflow-x: hidden;
