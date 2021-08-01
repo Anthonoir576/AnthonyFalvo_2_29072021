@@ -272,23 +272,37 @@ section h4 {
   margin-bottom: 2rem;
 }
 section .cards {
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+}
+section .cards .cards-p1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1.5fr 1fr;
   grid-row-gap: 50px;
   grid-column-gap: 50px;
 }
-section .cards :nth-child(1) {
+section .cards .cards-p1 :nth-child(1) {
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: span 2;
 }
-section .cards :nth-child(3) {
+section .cards .cards-p1 :nth-child(3) {
   grid-column-start: 2;
   grid-row-start: 2;
 }
-section .cards :nth-child(4) {
-  grid-column-start: 3;
+section .cards .cards-p2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+}
+section .cards .cards-p2 :nth-child(1) {
+  grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: span 2;
 }
