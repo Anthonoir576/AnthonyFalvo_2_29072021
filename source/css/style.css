@@ -214,6 +214,10 @@ main aside {
   border-radius: 25px;
   padding: 50px 25px 50px 25px;
 }
+main article h3 {
+  font-size: 1.5rem;
+  margin: 0 0 2rem 1rem;
+}
 main article > .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -227,6 +231,14 @@ main article > .article-link a {
   margin: 4rem 0 0 1rem;
   font-size: 1.5rem;
   font-weight: 800;
+}
+main aside .aside-title {
+  display: flex;
+  justify-content: space-between;
+}
+main aside .aside-title h3, main aside .aside-title i {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 main aside > .cards {
   display: grid;

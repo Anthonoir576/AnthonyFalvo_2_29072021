@@ -10,7 +10,7 @@ ___________________________________________
 - ☐ Refont complete a faire  
 - ☑ <del> Remplir les alt </del> 
 - ☐ Revoir tous le layout probablement. certainement une meilleures facon de faire
--
+- ☐ Add grand pix au click. Convertion du small / large.
 -
 -
 -

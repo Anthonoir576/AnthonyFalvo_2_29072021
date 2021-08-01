@@ -16,6 +16,13 @@ main {
 
     & article {
 
+        & h3 {
+
+            font-size: 1.5rem;
+            margin:0 0 2rem 1rem;
+
+        }
+
         & > .cards {
 
             display: grid;
@@ -28,26 +35,46 @@ main {
     
         }
 
+        & > .article-link a {
+
+            display: inline-block;
+            margin: 4rem 0 0 1rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+    
+        }
 
     }
 
-    & article > .article-link a {
+    & aside {
 
-        display: inline-block;
-        margin: 4rem 0 0 1rem;
-        font-size: 1.5rem;
-        font-weight: 800;
+        .aside-title {
 
-    }
+            display: flex;
+            justify-content: space-between;
 
-    & aside > .cards {
+            & h3, i {
 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        justify-items: center;
-        grid-row-gap: 50px;
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
 
-    }
+            }
+
+        }
+
+
+        & > .cards {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            justify-items: center;
+            grid-row-gap: 50px;
+    
+        }
+
+    }   
+
+
 
 }
