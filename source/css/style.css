@@ -18,7 +18,7 @@ body {
 }
 .card:hover {
   transition: 0.4s;
-  transform: scale(1.02);
+  transform: scale(1.015);
   box-shadow: 0px 5px 20px #999;
 }
 
@@ -229,7 +229,7 @@ main article > .cards {
 main article > .article-link a {
   display: inline-block;
   margin: 4rem 0 0 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 800;
 }
 main aside .aside-title {
@@ -269,27 +269,23 @@ main > article .card .card-img img {
   transform: translate(-50%, -50%);
 }
 main > article .card .card-body {
-  margin: 15px 15px 5px 15px;
+  padding: 15px 15px 5px 15px;
 }
 main > article .card h5 {
   font-size: 22px;
   margin-bottom: 5px;
+  min-height: 27px;
 }
 main > article .card p {
+  margin-bottom: 9px;
+  min-height: 25px;
   font-size: 19px;
   font-weight: 400;
-  margin-bottom: 9px;
   font-style: none;
   color: rgba(0, 0, 0, 0.5);
 }
-
-.fa-star {
-  color: rgba(0, 0, 0, 0.18);
-}
-
-.star {
-  font-weight: bold;
-  color: #0065fc;
+main > article .card i {
+  min-height: 22px;
 }
 
 main > aside .card {
@@ -323,17 +319,31 @@ main > aside .card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 15px 15px 5px 15px;
+  padding: 15px 15px 5px 15px;
 }
 main > aside .card h5 {
-  font-size: 22px;
+  min-height: 27px;
   margin-bottom: 5px;
+  font-size: 22px;
 }
 main > aside .card p {
-  font-size: 19px;
+  min-height: 25px;
   margin-bottom: 9px;
+  font-size: 19px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.733);
+}
+main > aside .card i {
+  min-height: 22px;
+}
+
+.fa-star {
+  color: rgba(0, 0, 0, 0.18);
+}
+
+.star {
+  font-weight: bold;
+  color: #0065fc;
 }
 
 /*

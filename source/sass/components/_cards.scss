@@ -31,7 +31,7 @@ main > article {
     
         & .card-body {
     
-            margin: 15px 15px 5px 15px;
+            padding: 15px 15px 5px 15px;
     
         }
     
@@ -39,17 +39,26 @@ main > article {
     
             font-size: 22px;
             margin-bottom: 5px;
+            min-height: 27px;
     
         }
     
         & p {
-    
+
+            margin-bottom: 9px;
+            min-height: 25px;
+
             font-size: 19px;
             font-weight: 400;
-            margin-bottom: 9px;
             font-style: none;
             color: rgba(0, 0, 0, 0.5);
     
+        }
+
+        & i {
+
+            min-height: 22px;
+
         }
     
     }
@@ -57,21 +66,6 @@ main > article {
 
 }
 
-// ############ STARS #########################
-// couleur etoile vide
-.fa-star {
-
-    color: rgba(0, 0, 0, 0.180);
-
-}
-
-// Couleur étoile pleine
-.star {
-
-    font-weight: bold;
-    color: $skyBlue;
-
-}
 
 main > aside {
 
@@ -121,27 +115,54 @@ main > aside {
             flex-direction: column;
             justify-content: space-around;
     
-            margin: 15px 15px 5px 15px;
+            padding: 15px 15px 5px 15px;
     
         }
     
         & h5 {
     
-            font-size: 22px;
+            min-height: 27px;
             margin-bottom: 5px;
-    
+
+            font-size: 22px;
+   
         }
     
         & p {
     
-            font-size: 19px;
+            min-height: 25px;
             margin-bottom: 9px;
+
+            font-size: 19px;
             font-style: italic;
             color: rgba(0, 0, 0, 0.733);
     
+        }
+
+        & i {
+
+            min-height: 22px;
+
         }
     
     }
     
 }
+
+// ############ STARS #########################
+// couleur etoile vide
+.fa-star {
+
+    color: rgba(0, 0, 0, 0.180);
+
+}
+
+// Couleur étoile pleine
+.star {
+
+    font-weight: bold;
+    color: $skyBlue;
+
+}
+
 
