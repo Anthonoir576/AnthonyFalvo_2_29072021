@@ -283,14 +283,14 @@ section .cards :nth-child(1) {
   grid-row-start: 1;
   grid-row-end: span 2;
 }
+section .cards :nth-child(3) {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
 section .cards :nth-child(4) {
   grid-column-start: 3;
   grid-row-start: 1;
   grid-row-end: span 2;
-}
-section .cards :nth-child(3) {
-  grid-column-start: 2;
-  grid-row-start: 2;
 }
 
 main > article .card {
