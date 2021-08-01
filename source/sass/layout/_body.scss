@@ -2,14 +2,22 @@ html,
 body {
 
     overflow-x: hidden;
+    margin-top: 1px;
     
 }
 
 
-// ########## Body ##################
-// overflow-x pour pallié le problème de saut d'image sur de l'animation en translate ou autre.
+// padding pour pallié certain soucie que j'aurais pu avoir avec une marge sur le body, 
 body {
 
-    margin: 0.05rem 4rem;
+    & header,
+    main,
+    section,
+    footer {
+    
+        padding: 0 4rem;
+            
+    }
+        
 
 }

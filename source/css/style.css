@@ -83,10 +83,14 @@ body {
 html,
 body {
   overflow-x: hidden;
+  margin-top: 1px;
 }
 
-body {
-  margin: 0.05rem 4rem;
+body header,
+body main,
+body section,
+body footer {
+  padding: 0 4rem;
 }
 
 header {
@@ -308,8 +312,18 @@ section .cards .cards-p2 :nth-child(1) {
   grid-row-end: span 2;
 }
 
+footer {
+  width: 100%;
+  background: #f2f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+footer div a {
+  display: block;
+}
+
 main > article .card {
-  width: 350px;
+  width: 100%;
   padding: 5px;
   border-radius: 20px;
   background-color: white;
@@ -322,7 +336,9 @@ main > article .card .card-img {
   overflow: hidden;
 }
 main > article .card .card-img img {
-  width: 110%;
+  object-fit: cover;
+  max-width: 100%;
+  min-height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;

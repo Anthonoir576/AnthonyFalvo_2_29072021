@@ -1,0 +1,20 @@
+footer {
+
+    width: 100%;
+
+    background: $grey;
+
+    display: flex;
+    justify-content: space-between;
+
+    & div {
+
+        & a {
+
+            display: block;
+
+        }
+
+    }
+
+}
