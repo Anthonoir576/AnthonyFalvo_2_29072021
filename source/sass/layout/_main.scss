@@ -1,0 +1,45 @@
+main {
+
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-column-gap: 20px;
+    //grid-row-gap: 20px;
+
+    & article,
+    aside {
+
+        background: $grey;
+        border-radius: 25px;
+
+        padding: 50px 25px 50px 25px;
+
+    }
+
+    & article > .cards {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+
+    }
+
+    & article > .article-link a {
+
+        display: inline-block;
+        margin: 2rem 0 0 2.25rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+    }
+
+    & aside > .cards {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+
+    }
+
+}

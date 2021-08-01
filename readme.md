@@ -8,7 +8,7 @@ ___________________________________________
 - Correction des grid
 - Minimisé les lignes inutiles. 
 - Refont complete a faire  
--
+- Remplire les alt
 -
 -
 -

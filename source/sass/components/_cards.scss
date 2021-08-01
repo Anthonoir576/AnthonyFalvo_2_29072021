@@ -1,56 +1,60 @@
-// Selecteur generique pour toute les cards du site, correction possible sur certain element. cette facon de faire, me permet d'ecrire moins de code, et pas répété cette configuration par la suite. Mais de modifier, au cas par cas.
-.card {
+main > article {
 
-    width: 350px;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: white; 
-    box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.301);
-
-    & .card-img {
-
-        border-radius: 20px 20px 0 0;
-        height: 180px;
-        position: relative;
-        overflow: hidden;
-
-        &  img {
-
-            width: 110%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        
-            transform: translate(-50%, -50%);
+    // type card
+    &  .card {
+    
+        width: 350px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: white; 
+        box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.301);
+    
+        & .card-img {
+    
+            border-radius: 20px 20px 0 0;
+            height: 180px;
+            position: relative;
+            overflow: hidden;
+    
+            &  img {
+    
+                width: 110%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            
+                transform: translate(-50%, -50%);
+            
+            }
         
         }
     
+        & .card-body {
+    
+            margin: 15px 15px 5px 15px;
+    
+        }
+    
+        & h5 {
+    
+            font-size: 22px;
+            margin-bottom: 5px;
+    
+        }
+    
+        & p {
+    
+            font-size: 19px;
+            margin-bottom: 9px;
+            font-style: italic;
+            color: rgba(0, 0, 0, 0.733);
+    
+        }
+    
     }
-
-    & .card-body {
-
-        margin: 15px 15px 5px 15px;
-
-    }
-
-    & h5 {
-
-        font-size: 22px;
-        margin-bottom: 5px;
-
-    }
-
-    & p {
-
-        font-size: 19px;
-        margin-bottom: 9px;
-        font-style: italic;
-        color: rgba(0, 0, 0, 0.733);
-
-    }
+    
 
 }
-
 
 // ############ STARS #########################
 // couleur etoile vide
@@ -65,5 +69,70 @@
 
     font-weight: bold;
     color: $skyBlue;
+
+}
+
+main > aside {
+
+    & .card-all {
+
+        display: flex; 
+        
+        // type card
+        &  .card {
+        
+            width: 350px;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: white; 
+            box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.301);
+        
+            & .card-img {
+        
+                border-radius: 20px 20px 0 0;
+                height: 180px;
+                position: relative;
+                overflow: hidden;
+        
+                &  img {
+        
+                    width: 110%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                
+                    transform: translate(-50%, -50%);
+                
+                }
+            
+            }
+        
+            & .card-body {
+        
+                margin: 15px 15px 5px 15px;
+        
+            }
+        
+            & h5 {
+        
+                font-size: 22px;
+                margin-bottom: 5px;
+        
+            }
+        
+            & p {
+        
+                font-size: 19px;
+                margin-bottom: 9px;
+                font-style: italic;
+                color: rgba(0, 0, 0, 0.733);
+        
+            }
+        
+        }
+        
+
+
+    }
 
 }

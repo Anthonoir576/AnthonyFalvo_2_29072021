@@ -203,34 +203,64 @@ header .intro .intro-info i {
   top: -2px;
 }
 
-.card {
+main {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  grid-column-gap: 20px;
+}
+main article,
+main aside {
+  background: #f2f2f2f2;
+  border-radius: 25px;
+  padding: 50px 25px 50px 25px;
+}
+main article > .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+main article > .article-link a {
+  display: inline-block;
+  margin: 2rem 0 0 2.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main aside > .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+}
+
+main > article .card {
   width: 350px;
   padding: 5px;
   border-radius: 20px;
   background-color: white;
   box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.301);
 }
-.card .card-img {
+main > article .card .card-img {
   border-radius: 20px 20px 0 0;
   height: 180px;
   position: relative;
   overflow: hidden;
 }
-.card .card-img img {
+main > article .card .card-img img {
   width: 110%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.card .card-body {
+main > article .card .card-body {
   margin: 15px 15px 5px 15px;
 }
-.card h5 {
+main > article .card h5 {
   font-size: 22px;
   margin-bottom: 5px;
 }
-.card p {
+main > article .card p {
   font-size: 19px;
   margin-bottom: 9px;
   font-style: italic;
@@ -244,6 +274,43 @@ header .intro .intro-info i {
 .star {
   font-weight: bold;
   color: #0065fc;
+}
+
+main > aside .card-all {
+  display: flex;
+}
+main > aside .card-all .card {
+  width: 350px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.301);
+}
+main > aside .card-all .card .card-img {
+  border-radius: 20px 20px 0 0;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+main > aside .card-all .card .card-img img {
+  width: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main > aside .card-all .card .card-body {
+  margin: 15px 15px 5px 15px;
+}
+main > aside .card-all .card h5 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+main > aside .card-all .card p {
+  font-size: 19px;
+  margin-bottom: 9px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.733);
 }
 
 /*
