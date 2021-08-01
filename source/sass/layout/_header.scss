@@ -98,7 +98,7 @@ header {
             display: flex;
             width: 535px;
 
-            border: 1px solid $grey;
+            border: 1px solid #f0eeeef2;
             border-radius: 15px;
             background: $grey;
             
@@ -216,7 +216,7 @@ header {
 
             display: flex;
             align-items: baseline;
-            justify-content: baseline;
+            justify-content: flex-start;
 
             margin-top: 2rem;
 
@@ -225,7 +225,7 @@ header {
                 margin-right: .7rem;
 
                 background: $grey;
-                border: 1px solid $grey;
+                border: 1px solid #f0eeeef2;
                 border-radius: 50%;
 
                 color: $skyBlue;
