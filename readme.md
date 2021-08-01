@@ -10,12 +10,12 @@ ___________________________________________
 - ❌ Refont complete a faire  
 - ❌ Revoir tous le layout probablement. certainement une meilleures facon de faire
 - ❌ Re verif les W3C a la fin
-- ☑ <del> Remplir les alt </del> 
-- ☑ <del> Add grand pix au click. Convertion du small / large. </del>
-- ☑ <del> Correction erreur importante w3c css / html </del>
-- ☑ <del> Correction erreur low w3c css / html  </del>
+- ✅ <del> Remplir les alt </del> 
+- ✅ <del> Add grand pix au click. Convertion du small / large. </del>
+- ✅ <del> Correction erreur importante w3c css / html </del>
+- ✅ <del> Correction erreur low w3c css / html  </del>
 -
-- ☐ Imcohérence sur maquette (mise en forme prix / centrage footer ? ce renseigner)
+- ❌ Imcohérence sur maquette (mise en forme prix / centrage footer ? ce renseigner)
 ___________________________________________
 
 < HTML : /> 
