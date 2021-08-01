@@ -47,7 +47,7 @@ body {
 .card:hover {
   transition: 0.4s;
   transform: scale(1.015);
-  box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.445);
+  box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.49);
 }
 
 .fa-star {
@@ -270,12 +270,13 @@ main aside > .cards {
 section h4 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  margin-left: 10px;
 }
 section .cards {
-  padding: 15px;
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   grid-column-gap: 50px;
 }
 section .cards .cards-p1 {
@@ -408,7 +409,7 @@ section .card {
   padding: 5px;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.3);
+  box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.301);
   position: relative;
 }
 section .card .card-img {
