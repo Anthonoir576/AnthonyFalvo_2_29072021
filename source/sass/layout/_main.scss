@@ -3,7 +3,6 @@ main {
     display: grid;
     grid-template-columns: 3fr 1.5fr;
     grid-column-gap: 20px;
-    //grid-row-gap: 20px;
 
     & article,
     aside {
@@ -22,14 +21,17 @@ main {
         grid-template-rows: repeat(2, 1fr);
         justify-items: center;
 
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+
     }
 
     & article > .article-link a {
 
         display: inline-block;
-        margin: 2rem 0 0 2.25rem;
+        margin: 4rem 0 0 1rem;
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: 800;
 
     }
 
@@ -39,6 +41,7 @@ main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
+        grid-row-gap: 50px;
 
     }
 
