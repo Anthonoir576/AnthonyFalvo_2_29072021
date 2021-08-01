@@ -8,7 +8,7 @@ ___________________________________________
 - ☐ Correction des grid
 - ☐ Minimisé les lignes inutiles. 
 - ☐ Refont complete a faire  
-- ☑ ~~ Remplir les alt ~~ 
+- ☑ <del> Remplir les alt </del> 
 - ☐ Revoir tous le layout probablement. certainement une meilleures facon de faire
 -
 -
