@@ -32,14 +32,14 @@ body {
 }
 
 main .card {
-  transition: 0.9s;
+  transition: 0.8s;
 }
 main .card:hover {
   transition: 0.4s;
   transform: scale(1.015);
   box-shadow: 0px 5px 20px #999;
   filter: contrast(120%);
-  filter: saturate(200%);
+  filter: saturate(300%);
 }
 
 section .card {

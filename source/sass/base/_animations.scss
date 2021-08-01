@@ -41,29 +41,28 @@
 }
 
 
-
 // ############### MAIN ################################
 main {
 
     // card animation pour le survol
     & .card {
 
-    transition: .9s;
+    transition: .8s;
 
-    // Animation au hover, avec un retour lent
-    &:hover {
+        // Animation au hover, avec un retour lent
+        &:hover {
 
-        transition: .4s;
-        transform: scale(1.015);
-        //box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.342);
-        box-shadow: 0px 5px 20px #999;
+            transition: .4s;
+            transform: scale(1.015);
+            //box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.342);
+            box-shadow: 0px 5px 20px #999;
 
-        filter: contrast(120%);
-        filter: saturate(200%);
+            filter: contrast(120%);
+            filter: saturate(300%);
+
+        }
 
     }
-
-}
 
 }
 
