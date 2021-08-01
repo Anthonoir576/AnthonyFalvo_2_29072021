@@ -19,7 +19,7 @@ body {
 .intro-searchbar button:hover {
   transition: 0.3s;
   box-shadow: 0 0 4px 1px #0065fc;
-  filter: saturate(900%);
+  filter: saturate(400%);
 }
 
 .intro-filter p {
