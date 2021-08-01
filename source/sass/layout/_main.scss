@@ -14,15 +14,20 @@ main {
 
     }
 
-    & article > .cards {
+    & article {
 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        justify-items: center;
+        & > .cards {
 
-        grid-column-gap: 20px;
-        grid-row-gap: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+    
+            grid-column-gap: 20px;
+            grid-row-gap: 50px;
+    
+        }
+
 
     }
 

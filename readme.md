@@ -9,7 +9,7 @@ ___________________________________________
 - Minimisé les lignes inutiles. 
 - Refont complete a faire  
 - Remplire les alt
--
+- Revoir tous le layout probablement. certainement une meilleures facon de faire
 -
 -
 -
