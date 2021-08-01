@@ -132,3 +132,29 @@
     }
 
 }
+
+
+// ############## FOOTER ################################
+footer {
+
+    & div {
+
+        & a {
+
+            transition: .5s;
+                
+            &:hover {
+
+                transition: .3s;
+
+                transform: scale(1.05);
+                color: rgba(0, 0, 0, 0.274);
+
+            }
+
+
+        }
+
+    }
+
+}
