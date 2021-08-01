@@ -30,9 +30,9 @@
         &:hover {
 
             transition: 1s;
-            filter: saturate(100%);
+            filter: saturate(300%);
             background: $lowBlue;
-            color: rgba(0, 0, 0, 0.671);
+            color: rgb(0, 0, 0);
             
         }
 
@@ -43,8 +43,10 @@
 
 
 // ############### MAIN ################################
-// card animation pour le survol
-.card {
+main {
+
+    // card animation pour le survol
+    & .card {
 
     transition: .9s;
 
@@ -56,27 +58,43 @@
         //box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.342);
         box-shadow: 0px 5px 20px #999;
 
+        filter: contrast(120%);
+        filter: saturate(200%);
+
     }
+
+}
 
 }
 
 // ############### SECTION ################################
-// card animation pour le survol
-.card {
+section {
 
-    transition: .9s;
+    & .card {
+    
+        transition: .9s;
 
-    // Animation au hover, avec un retour lent
-    &:hover {
+        // Animation au hover, avec un retour lent
+        &:hover {
 
-        transition: .4s;
-        transform: scale(1.015);
-        //box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.342);
-        box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.490);
+            transition: .4s;
+            transform: scale(1.015);
+            //box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.342);
+            box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.490);
+
+            
+        filter: contrast(120%);
+        filter: saturate(300%);
+
+
+        }
 
     }
+    
+
 
 }
+
 
 // etoile
 // EFFET AU HOVER ETOILE VIDE

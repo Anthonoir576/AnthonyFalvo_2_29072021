@@ -26,27 +26,31 @@ body {
 }
 .intro-filter p:hover {
   transition: 1s;
-  filter: saturate(100%);
+  filter: saturate(300%);
   background: #deebff;
-  color: rgba(0, 0, 0, 0.671);
+  color: black;
 }
 
-.card {
+main .card {
   transition: 0.9s;
 }
-.card:hover {
+main .card:hover {
   transition: 0.4s;
   transform: scale(1.015);
   box-shadow: 0px 5px 20px #999;
+  filter: contrast(120%);
+  filter: saturate(200%);
 }
 
-.card {
+section .card {
   transition: 0.9s;
 }
-.card:hover {
+section .card:hover {
   transition: 0.4s;
   transform: scale(1.015);
   box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.49);
+  filter: contrast(120%);
+  filter: saturate(300%);
 }
 
 .fa-star {
@@ -294,7 +298,7 @@ section .cards {
 section .cards .cards-p1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1.5fr 1fr;
+  grid-template-rows: 1.35fr 1fr;
   grid-row-gap: 50px;
   grid-column-gap: 50px;
 }
