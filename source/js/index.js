@@ -24,7 +24,7 @@ onglets.forEach(onglet => {
 
         }
 
-        // data rajouter en HTML 
+        // data rajouter en HTML afin de comparer les onglets ainsi repérer si j'ai cliqué sur un onglet qui ne possède pas cette classe
         data = onglet.getAttribute('data-onglets');
 
         // Boucle qui vérifie avec la condition if, que l'attribut et different, si il l'es, il supprimera la classe active de cette élément.
