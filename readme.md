@@ -14,6 +14,7 @@ ___________________________________________
 - ☑ <del> Correction erreur importante w3c css / html </del>
 - ☑ <del> Correction erreur low w3c css / html  </del>
 -
+- ☐ Imcohérence sur maquette (mise en forme prix / centrage footer ? ce renseigner)
 ___________________________________________
 
 < HTML : /> 

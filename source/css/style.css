@@ -345,6 +345,10 @@ main > aside .card i {
   min-height: 22px;
 }
 
+.card-text strong {
+  font-weight: 500;
+}
+
 .fa-star {
   color: rgba(0, 0, 0, 0.18);
 }
