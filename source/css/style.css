@@ -599,6 +599,15 @@ footer div a {
     grid-template-rows: repeat(6, 1fr);
     grid-row-gap: 20px;
   }
+
+  section .cards .cards-p1 {
+    display: flex;
+    flex-direction: column;
+  }
+  section .cards .cards-p2 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
