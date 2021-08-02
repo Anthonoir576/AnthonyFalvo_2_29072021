@@ -84,16 +84,15 @@ header {
             display: flex;
             width: 535px;
 
-            border: 1px solid #f0eeeef2;
-            border-radius: 15px;
-            background: $grey;
-            
+            border-radius: 15px;            
             margin-bottom: 2rem;
 
-            & i {
+            & .fa-map-marker-alt {
 
                 padding: 14px 26px 0px 25px;
                 font-size: 18px;
+                background: $grey;
+                border-radius: 15px 0 0 15px;
 
             }
 
@@ -103,6 +102,8 @@ header {
                 height: 50px;
 
                 border: none;
+                border-top: 1px solid #f0eeeef2;
+                border-bottom: 1px solid #f0eeeef2;
                 
                 width: 320px;
 
@@ -132,9 +133,21 @@ header {
 
                 width: 150px;
 
-                border-radius: 0 15px 15px 0;
                 background: $skyBlue;
-                color: white;
+                border-radius: 0 15px 15px 0;
+
+                & span {
+
+                    color: white;
+
+                }
+
+                & i {
+
+                    display: none;
+                    color: white;
+
+                }
     
             }
 
@@ -143,32 +156,36 @@ header {
         // ################################## FILTRE ########################################
         & .intro-filter {
 
-            display: grid;
-            grid-template-columns: 80px 200px 160px 195px 240px;
-            grid-template-rows: 1fr;
+            display:flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-items: flex-start;
-            
-            
 
+            & .intro-filter-title h2, .intro-filter-icon p {
+
+                margin-bottom: .6rem;
+
+            }
+            
             & p {
 
                 cursor: pointer;
-                display: block;
+                display: inline-block;
 
 
                 border: 2px solid $grey;
                 border-radius: 30px;
                 padding: 12px 25px 12px 60px;
-
-                
+    
                 font-weight: 700;
                 white-space: nowrap;
                 position: relative;
 
                 // icon font-awesone
                 & i {
-            
+                    
+                    font-size: 1rem;
+
                     position: absolute;
                     left: -2px;
                     top: -3px;
@@ -178,16 +195,28 @@ header {
 
                     border-radius: 50%;
 
-                    padding: 15px;
+                    padding: 15px 18px;
 
                 }
     
             }
 
-            // correction appliquer au deuxièmes font-awesone, comportement innatendu par rapport a ca Largeur, hauteur différentes 
+            // correction appliquer au  font-awesone, comportement innatendu par rapport a ca Largeur, hauteur différentes 
             & p:nth-child(3) > i {
 
-                padding: 15px 18px;
+                padding: 15px 17px;
+
+            }
+
+            & p:nth-child(2) > i {
+
+                padding: 15px 20px;
+
+            }
+
+            & p:nth-child(1) > i {
+
+                padding: 15px 15px;
 
             }
 
@@ -212,8 +241,8 @@ header {
 
                 margin-right: .7rem;
 
-                background: $grey;
-                border: 1px solid #f0eeeef2;
+                background: #fafafa;
+                border: 1px solid #f0eeee;
                 border-radius: 50%;
 
                 color: $skyBlue;

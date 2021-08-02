@@ -1,5 +1,8 @@
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
 
+    // ########### HEADER #################
+
+    // Correction NAVIGATION
     header {
 
         padding: 0!important;
@@ -44,27 +47,24 @@
 
                 & li {
 
-                    // position: relative;
-                    //margin-right: 4rem;
-    
-                    text-align: center;
-                    
                     .navbar-logo {
     
+                        text-align: left;
                         position: relative;
     
                         top: 0px;
-                        left: 0px;
+                        left: 20px;
                         
                     }
                 }
 
                 & .nav-item a {
 
+                    text-align: center;
                     border-top: none;
                     border-bottom: 3px solid $grey;
 
-                    padding: 30px 30px 30px 30px;
+                    padding: 30px;
 
                     &.active {
 
@@ -77,6 +77,8 @@
 
                         border-top: 3px solid transparent;
                         border-bottom: 3px solid transparent;
+                        text-align: right;
+                        padding-right: 20px;
     
                     }
                 }
@@ -88,5 +90,54 @@
         }
 
     }
+
+    // Correction SEARCH BAR + MARGE SUR TOUS LINTRO
+    header {
+
+        & .intro {
+
+            
+            margin: 0 15px;
+
+            & .intro-searchbar {
+
+                max-width: 100%;
+
+                & input {
+
+                    min-width: 200px;
+                    
+                }
+        
+                & button {
+        
+                    max-width: 50px;
+                    border-radius: 15px;
+        
+                    & span {
+        
+                        display: none;
+        
+                    }
+        
+                    & .fa-search {
+        
+                        display: block;
+        
+                    }
+        
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1556px) and (min-width: 0) {
+
+
 
 }

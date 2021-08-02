@@ -143,19 +143,21 @@ header .intro > p {
 header .intro .intro-searchbar {
   display: flex;
   width: 535px;
-  border: 1px solid #f0eeeef2;
   border-radius: 15px;
-  background: #f2f2f2f2;
   margin-bottom: 2rem;
 }
-header .intro .intro-searchbar i {
+header .intro .intro-searchbar .fa-map-marker-alt {
   padding: 14px 26px 0px 25px;
   font-size: 18px;
+  background: #f2f2f2f2;
+  border-radius: 15px 0 0 15px;
 }
 header .intro .intro-searchbar input {
   padding-left: 30px;
   height: 50px;
   border: none;
+  border-top: 1px solid #f0eeeef2;
+  border-bottom: 1px solid #f0eeeef2;
   width: 320px;
 }
 header .intro .intro-searchbar input:focus {
@@ -172,20 +174,28 @@ header .intro .intro-searchbar button {
   font-weight: 500;
   font-size: 20px;
   width: 150px;
-  border-radius: 0 15px 15px 0;
   background: #0065fc;
+  border-radius: 0 15px 15px 0;
+}
+header .intro .intro-searchbar button span {
+  color: white;
+}
+header .intro .intro-searchbar button i {
+  display: none;
   color: white;
 }
 header .intro .intro-filter {
-  display: grid;
-  grid-template-columns: 80px 200px 160px 195px 240px;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-items: flex-start;
 }
+header .intro .intro-filter .intro-filter-title h2, header .intro .intro-filter .intro-filter-icon p {
+  margin-bottom: 0.6rem;
+}
 header .intro .intro-filter p {
   cursor: pointer;
-  display: block;
+  display: inline-block;
   border: 2px solid #f2f2f2f2;
   border-radius: 30px;
   padding: 12px 25px 12px 60px;
@@ -194,16 +204,23 @@ header .intro .intro-filter p {
   position: relative;
 }
 header .intro .intro-filter p i {
+  font-size: 1rem;
   position: absolute;
   left: -2px;
   top: -3px;
   color: #0065fc;
   background: #deebff;
   border-radius: 50%;
-  padding: 15px;
+  padding: 15px 18px;
 }
 header .intro .intro-filter p:nth-child(3) > i {
-  padding: 15px 18px;
+  padding: 15px 17px;
+}
+header .intro .intro-filter p:nth-child(2) > i {
+  padding: 15px 20px;
+}
+header .intro .intro-filter p:nth-child(1) > i {
+  padding: 15px 15px;
 }
 header .intro .intro-filter h2, header .intro .intro-filter p {
   margin-right: 1rem;
@@ -216,8 +233,8 @@ header .intro .intro-info {
 }
 header .intro .intro-info i {
   margin-right: 0.7rem;
-  background: #f2f2f2f2;
-  border: 1px solid #f0eeeef2;
+  background: #fafafa;
+  border: 1px solid #f0eeee;
   border-radius: 50%;
   color: #0065fc;
   font-size: 12px;
@@ -472,7 +489,7 @@ footer div a {
   color: rgba(0, 0, 0, 0.527);
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
   header {
     padding: 0 !important;
   }
@@ -493,18 +510,17 @@ footer div a {
   header nav ul :nth-child(4) {
     grid-area: register;
   }
-  header nav ul li {
-    text-align: center;
-  }
   header nav ul li .navbar-logo {
+    text-align: left;
     position: relative;
     top: 0px;
-    left: 0px;
+    left: 20px;
   }
   header nav ul .nav-item a {
+    text-align: center;
     border-top: none;
     border-bottom: 3px solid #f2f2f2f2;
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
   }
   header nav ul .nav-item a.active {
     border-top: none;
@@ -513,6 +529,28 @@ footer div a {
   header nav ul .nav-item a.signup {
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  header .intro {
+    margin: 0 15px;
+  }
+  header .intro .intro-searchbar {
+    max-width: 100%;
+  }
+  header .intro .intro-searchbar input {
+    min-width: 200px;
+  }
+  header .intro .intro-searchbar button {
+    max-width: 50px;
+    border-radius: 15px;
+  }
+  header .intro .intro-searchbar button span {
+    display: none;
+  }
+  header .intro .intro-searchbar button .fa-search {
+    display: block;
   }
 }
 
