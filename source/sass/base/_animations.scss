@@ -1,4 +1,4 @@
-// ############### HEADER ##############################
+// ############### HEADER #############################
 // Effet sur search bar
 .intro-searchbar {
 
@@ -19,7 +19,7 @@
 
 }
 
-// effet sur filtre de recherche
+// ############### filtre de recherche #################
 .intro-filter {
 
     & p {
@@ -66,7 +66,7 @@ main {
 
 }
 
-// ############### SECTION ################################
+// ############### SECTION #############################
 section {
 
     & .card {
@@ -90,12 +90,10 @@ section {
 
     }
     
-
-
 }
 
 
-// etoile
+// ############### etoile ##############################
 // EFFET AU HOVER ETOILE VIDE
 .fa-star {
 
@@ -130,6 +128,7 @@ section {
 
 }
 
+// ############## link afficher plus ###################
 // lien AFFICHER PLUS en bas des cartes Hebergements à ..
 .article-link {
 
@@ -159,12 +158,14 @@ footer {
         & a {
 
             transition: .5s;
-                
+            
+            // J'ai choisi le translate, car j'aime beaucoup mettre du scale au hover, j'ai voulu testé d'autre facon moderne de faire des animations
             &:hover {
 
                 transition: .3s;
 
-                transform: scale(1.05);
+                //transform: scale(1.05);
+                transform: translateX(10px);
                 color: rgba(0, 0, 0, 0.274);
 
             }
