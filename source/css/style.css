@@ -596,6 +596,11 @@ footer div a {
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 50px;
   }
+  section .cards .cards-p2 :nth-child(1) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+  }
 }
 @media only screen and (max-width: 650px) {
   main article > .cards {
