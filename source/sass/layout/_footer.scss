@@ -11,11 +11,19 @@ footer {
     justify-content: space-around;
     align-items: center;
 
+    & :nth-child(1) {
+
+        // Correction alignement A PROPOS
+        position: relative;
+        top: 12px;
+
+    }
+
     & div {
 
         & h6 {
 
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
 
             font-size: 18px;
 

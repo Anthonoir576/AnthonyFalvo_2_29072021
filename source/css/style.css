@@ -479,8 +479,12 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
+footer :nth-child(1) {
+  position: relative;
+  top: 12px;
+}
 footer div h6 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 18px;
 }
 footer div a {
@@ -585,7 +589,7 @@ footer div a {
   }
 
   section {
-    padding: 50px 20px !important;
+    padding: 0px 20px !important;
   }
   section .cards {
     grid-template-columns: 1fr;
@@ -607,6 +611,23 @@ footer div a {
   section .cards .cards-p2 {
     display: flex;
     flex-direction: column;
+  }
+
+  footer {
+    padding: 0 30px !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    text-align: left;
+  }
+  footer div {
+    margin: 20px 0;
+    width: 220px;
+  }
+  footer :nth-child(1) {
+    position: static;
+    top: 0px;
   }
 }
 
