@@ -204,6 +204,12 @@
             max-height: 900px;
             border-radius: 0px;
 
+            & > .cards {
+
+                grid-row-gap: 20px!important;
+
+            }
+
         }
 
     }

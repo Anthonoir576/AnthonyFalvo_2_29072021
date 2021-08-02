@@ -587,6 +587,9 @@ footer div a {
     max-height: 900px;
     border-radius: 0px;
   }
+  main aside > .cards {
+    grid-row-gap: 20px !important;
+  }
 
   section {
     padding: 0px 20px !important;
