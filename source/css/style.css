@@ -109,16 +109,13 @@ header {
   margin-bottom: 3rem;
 }
 header nav {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr;
-  align-items: baseline;
   margin-bottom: 2rem;
 }
 header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
 }
 header nav ul li a {
   display: block;
@@ -473,6 +470,50 @@ footer div a {
   display: block;
   margin-bottom: 0.5rem;
   color: rgba(0, 0, 0, 0.527);
+}
+
+@media only screen and (max-width: 1500px) {
+  header {
+    padding: 0 !important;
+  }
+  header nav ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo register" "link1 link2";
+  }
+  header nav ul :nth-child(1) {
+    grid-area: logo;
+  }
+  header nav ul :nth-child(2) {
+    grid-area: link1;
+  }
+  header nav ul :nth-child(3) {
+    grid-area: link2;
+  }
+  header nav ul :nth-child(4) {
+    grid-area: register;
+  }
+  header nav ul li {
+    text-align: center;
+  }
+  header nav ul li .navbar-logo {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  header nav ul .nav-item a {
+    border-top: none;
+    border-bottom: 3px solid #f2f2f2f2;
+    padding: 30px 30px 30px 30px;
+  }
+  header nav ul .nav-item a.active {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+  }
+  header nav ul .nav-item a.signup {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

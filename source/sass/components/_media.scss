@@ -1,0 +1,92 @@
+@media only screen and (max-width: 1500px) {
+
+    header {
+
+        padding: 0!important;
+
+        & nav {
+
+            & ul {
+
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "logo register"
+                "link1 link2";
+        
+                & :nth-child(1) {
+        
+                    grid-area: logo;
+        
+                }
+        
+                
+                & :nth-child(2) {
+        
+                    grid-area: link1;
+
+        
+                }
+        
+                
+                & :nth-child(3) {
+        
+                    grid-area: link2;
+        
+                }
+        
+                
+                & :nth-child(4) {
+        
+                    grid-area: register;
+        
+                }
+
+                & li {
+
+                    // position: relative;
+                    //margin-right: 4rem;
+    
+                    text-align: center;
+                    
+                    .navbar-logo {
+    
+                        position: relative;
+    
+                        top: 0px;
+                        left: 0px;
+                        
+                    }
+                }
+
+                & .nav-item a {
+
+                    border-top: none;
+                    border-bottom: 3px solid $grey;
+
+                    padding: 30px 30px 30px 30px;
+
+                    &.active {
+
+                        border-top: none;
+                        border-bottom: 3px solid $skyBlue;  
+
+                    }
+
+                    &.signup {
+
+                        border-top: 3px solid transparent;
+                        border-bottom: 3px solid transparent;
+    
+                    }
+                }
+
+
+
+            }
+
+        }
+
+    }
+
+}

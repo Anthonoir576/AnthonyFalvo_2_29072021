@@ -6,21 +6,17 @@ header {
     
     // ################################## NAV ########################################   
     & nav {
-
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 1fr;
- 
-        align-items: baseline;
         
-
         margin-bottom: 2rem;
 
         & ul {
 
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
+            
+        display: grid;
+        grid-template-columns: 10fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+ 
+        align-items: center;
 
             & li {
 
