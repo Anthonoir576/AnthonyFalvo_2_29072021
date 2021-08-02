@@ -489,6 +489,16 @@ footer div a {
   color: rgba(0, 0, 0, 0.527);
 }
 
+@media only screen and (max-width: 1556px) and (min-width: 1201px) {
+  main article > .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20px;
+  }
+  main aside > .cards {
+    height: 100%;
+  }
+}
 @media only screen and (max-width: 1200px) {
   header {
     padding: 0 !important;
@@ -551,6 +561,24 @@ footer div a {
   }
   header .intro .intro-searchbar button .fa-search {
     display: block;
+  }
+
+  main {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main article {
+    margin-top: 3rem;
+    background: none;
+  }
+  main article > .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20px;
+  }
+  main aside {
+    max-height: 900px;
   }
 }
 

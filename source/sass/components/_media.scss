@@ -1,6 +1,42 @@
+
+// ENTRE 1556px et 1201px DE LARGEUR
+@media only screen and (max-width: 1556px) and (min-width: 1201px) {
+
+    // CARDS 
+    main {
+
+        & article {
+
+            & > .cards {
+
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+
+                grid-row-gap: 20px;
+
+            }
+
+        }
+
+        & aside {
+
+            & > .cards {
+
+                height: 100%;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+// EN DESSOUS DE 1200px DE LARGEUR 
 @media only screen and (max-width: 1200px) {
 
-    // ########### HEADER #################
+    // ###################### HEADER ############################
 
     // Correction NAVIGATION
     header {
@@ -134,10 +170,39 @@
 
     }
 
+    // ###################### MAIN ############################
+    // CARDS 
+    main {
+
+        padding: 0!important;
+
+        display: flex;
+        flex-direction: column-reverse;
+    
+        & article {
+
+            margin-top: 3rem;
+
+            background: none;
+
+            & > .cards {
+
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+
+                grid-row-gap: 20px;
+
+            }
+
+        }
+
+        & aside {
+            
+            max-height: 900px;
+
+        }
+
+    }
+
 }
 
-@media only screen and (max-width: 1556px) and (min-width: 0) {
-
-
-
-}
