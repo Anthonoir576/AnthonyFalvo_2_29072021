@@ -244,6 +244,13 @@
 
                 grid-row-gap: 20px;
 
+                & :nth-child(4) .card-img img,
+                  :nth-child(6) .card-img img {
+
+                    width: 100%;
+
+                }
+
             }
 
         }
