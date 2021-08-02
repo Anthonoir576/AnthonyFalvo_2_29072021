@@ -544,7 +544,7 @@ footer div a {
   }
 
   header .intro {
-    margin: 0 15px;
+    padding: 0 20px;
   }
   header .intro .intro-searchbar {
     max-width: 100%;
@@ -569,6 +569,7 @@ footer div a {
     flex-direction: column-reverse;
   }
   main article {
+    padding: 50px 20px !important;
     margin-top: 3rem;
     background: none;
   }
@@ -578,7 +579,25 @@ footer div a {
     grid-row-gap: 20px;
   }
   main aside {
+    padding: 50px 20px !important;
     max-height: 900px;
+    border-radius: 0px;
+  }
+
+  section {
+    padding: 50px 20px !important;
+  }
+  section .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 50px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main article > .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 20px;
   }
 }
 

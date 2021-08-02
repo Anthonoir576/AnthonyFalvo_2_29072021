@@ -133,7 +133,7 @@
         & .intro {
 
             
-            margin: 0 15px;
+            padding: 0 20px;
 
             & .intro-searchbar {
 
@@ -181,6 +181,7 @@
     
         & article {
 
+            padding: 50px 20px!important;
             margin-top: 3rem;
 
             background: none;
@@ -198,11 +199,56 @@
 
         & aside {
             
+            padding: 50px 20px!important;
+
             max-height: 900px;
+            border-radius: 0px;
+
+        }
+
+    }
+
+    // ###################### SECTION ############################
+    section {
+
+        padding: 50px 20px!important;
+
+        & .cards {
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            grid-row-gap: 50px;
+
+        }
+
+    }
+
+
+}
+
+// CARTE Hebergement marseille
+// EN DESSOUS DE 650px DE LARGEUR 
+@media only screen and (max-width: 650px) {
+
+
+    // ###################### MAIN ############################
+    // CARDS 
+    main {
+
+        & article {
+
+            & > .cards {
+
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+
+                grid-row-gap: 20px;
+
+            }
 
         }
 
     }
 
 }
-
