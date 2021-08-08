@@ -31,8 +31,6 @@
 - Une partie JS est présente pour le système d'onglet, et certaine animation CSS en plus, dans une but pédagogique uniquement. Ils serront désactivé pour le rendu du projet afin de respecter les consignes. 
 
 
-___________________________________________
-
 ## À FAIRE :
 
 - ✅ <del>Correction des grid</del>
@@ -46,4 +44,3 @@ ___________________________________________
 - ✅ <del> Correction erreur low w3c css / html  </del>
 -
 - ❌ Imcohérence sur maquette (mise en forme prix / centrage footer ? ce renseigner)
-___________________________________________
