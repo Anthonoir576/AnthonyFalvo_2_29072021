@@ -1,11 +1,11 @@
 # OpenClassrooms Projet 02 
 
 ## Transformez une maquette en site web :
-__________________________________________________
+
 
 ![maquette web reservia](./source/image/md-picture/mdpix.png)
 
-___________________________________________________
+
 ## Éléments fournis par l'organisme de formation.
 - La maquette pour les résolutions ordinateur et téléphone nous est donné.
 - Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
@@ -33,8 +33,8 @@ ___________________________________________________
 
 ___________________________________________
 
-#### À FAIRE :
-s
+## À FAIRE :
+
 - ✅ <del>Correction des grid</del>
 - ❌ Minimisé les lignes inutiles. 
 - ❌ Refont complete a faire  
