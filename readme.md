@@ -4,11 +4,10 @@
 
 ![maquette web reservia](./source/image/md-picture/mdpix.png)
 
-### Éléments fournis par l'entreprise.
+### Éléments fournis par l'organisme de formation.
 - La maquette pour les résolutions ordinateur et téléphone nous est donné.
 - Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
 - Les icones proviennent de [Font Awesome](https://fontawesome.com/)
-- Les couleurs sont : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
 - La police est ["Raleway"](https://fonts.google.com/specimen/Raleway)
 
 ### Cahier des charges
@@ -33,6 +32,7 @@
 ___________________________________________
 
 #### À FAIRE :
+s
 - ✅ <del>Correction des grid</del>
 - ❌ Minimisé les lignes inutiles. 
 - ❌ Refont complete a faire  
