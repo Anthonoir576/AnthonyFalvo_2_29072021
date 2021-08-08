@@ -2,8 +2,7 @@
 
 ## Transformez une maquette en site web :
 
-
-![maquette web reservia](./img/mockup/desktop.png)
+![maquette web reservia](./source/image/md-picture/mdpix.png)
 
 ### Éléments fournis par l'entreprise.
 - La maquette pour les résolutions ordinateur et téléphone nous est donné.
