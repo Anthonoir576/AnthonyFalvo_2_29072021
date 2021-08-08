@@ -27,13 +27,13 @@
 ### Notes sur la réalisation du projet
 - L'integration est faite sur l'éditeur Visual Studio Code 
 - [Sass](https://sass-lang.com/) est utilisé pour organiser le css.
+- Une partie JS est présente pour le système d'onglet, et certaine animation CSS en plus, dans une but pédagogique uniquement. Ils serront désactivé pour le rendu du projet afin de respecter les consignes. 
 
 
 ___________________________________________
 
-< A FAIRE : />
-
-- ❌ Correction des grid
+#### À FAIRE :
+- ✅ <del>Correction des grid</del>
 - ❌ Minimisé les lignes inutiles. 
 - ❌ Refont complete a faire  
 - ✅ <del>Revoir tous le layout probablement. certainement une meilleures facon de faire</del>
