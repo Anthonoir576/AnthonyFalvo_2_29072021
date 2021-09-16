@@ -34,8 +34,7 @@
 ## À FAIRE :
 
 - ✅ <del>Correction des grid</del>
-- ❌ Minimisé les lignes inutiles. 
-- ❌ Refont complete a faire  
+- ✅ <del>Minimisé les lignes inutiles.</del>   
 - ✅ <del>Revoir tous le layout probablement. certainement une meilleures facon de faire</del>
 - ✅ <del>Re verif les W3C a la fin</del>
 - ✅ <del> Remplir les alt </del> 
