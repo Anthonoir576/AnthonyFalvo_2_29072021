@@ -642,5 +642,20 @@ main article > .cards :nth-child(6) .card-img img {
     top: 0px;
   }
 }
+@media only screen and (max-width: 390px) {
+  header nav ul .nav-item a {
+    padding: 30px 10px 30px 10px;
+  }
+  header .intro .intro-searchbar input {
+    min-width: 100px;
+  }
+
+  main aside {
+    padding: 50px 10px !important;
+  }
+  main aside .card .card-img {
+    min-width: 150px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
