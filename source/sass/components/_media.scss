@@ -149,6 +149,7 @@
         
                     max-width: 50px;
                     border-radius: 15px;
+                    transform: translateX(-10px);
         
                     & span {
         
@@ -366,6 +367,48 @@
         & .card .card-img {
 
             min-width: 150px;
+
+        }
+
+    }
+
+}
+
+// NAV INPUT SEARCH & CARD ASIDE correction
+// EN DESSOUS DE 320px DE LARGEUR 
+@media only screen and (max-width: 320px) {
+
+    main aside {
+
+        padding: 50px 5px !important;
+
+        & .card .card-img {
+
+            min-width: 150px;
+
+        }
+
+        & .cards .card .card-link .card-body {
+
+            padding: 15px 8px 5px 8px;
+
+            & .card-title {
+
+                font-size: 1rem;
+
+            }
+
+            & .card-text {
+
+                font-size: .7rem;
+
+            }
+
+            & .card-stars i.far.fa-star {
+
+                font-size: .8rem;
+
+            }
 
         }
 
