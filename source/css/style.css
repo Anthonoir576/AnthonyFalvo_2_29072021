@@ -626,54 +626,69 @@ footer div a {
 /* ############# MEDIA QUERIE ############### */
 /* RESPONSIVE  */
 
+/*  MAIN => ARTICLE / ASIDE */
 @media only screen and (max-width: 1556px) and (min-width: 1201px) {
+  
   main article > .cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 20px;
   }
+
   main aside > .cards {
     height: 100%;
   }
+
 }
 
+/* HEADER - MAIN => ARTICLE / ASIDE - SECTION */
 @media only screen and (max-width: 1200px) {
+  
   header {
-    padding: 0 !important;
+    padding: 0!important;
   }
+
   header nav ul {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "logo register" "link1 link2";
   }
+
   header nav ul :nth-child(1) {
     grid-area: logo;
   }
+
   header nav ul :nth-child(2) {
     grid-area: link1;
   }
+
   header nav ul :nth-child(3) {
     grid-area: link2;
   }
+
   header nav ul :nth-child(4) {
     grid-area: register;
   }
+
   header nav ul li .navbar-logo {
     text-align: left;
     position: relative;
     top: 0px;
     left: 20px;
   }
+
   header nav ul .nav-item a {
     text-align: center;
     border-top: none;
     border-bottom: 3px solid #f2f2f2f2;
     padding: 30px;
   }
+
   header nav ul .nav-item a.active {
     border-top: none;
     border-bottom: 3px solid #0065fc;
   }
+
   header nav ul .nav-item a.signup {
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
@@ -684,21 +699,26 @@ footer div a {
   header .intro {
     padding: 0 20px;
   }
-  header .intro .intro-searchbar {
+
+  header .intro-searchbar {
     max-width: 100%;
   }
-  header .intro .intro-searchbar input {
+  
+  header .intro-searchbar input {
     min-width: 200px;
   }
-  header .intro .intro-searchbar button {
+
+  header .intro-searchbar button {
     max-width: 50px;
     border-radius: 15px;
     transform: translateX(-10px);
   }
-  header .intro .intro-searchbar button span {
+
+  header .intro-searchbar button span {
     display: none;
   }
-  header .intro .intro-searchbar button .fa-search {
+
+  header .intro-searchbar button .fa-search {
     display: block;
   }
 
@@ -707,21 +727,25 @@ footer div a {
     display: flex;
     flex-direction: column-reverse;
   }
+
   main article {
     padding: 50px 20px !important;
     margin-top: 3rem;
     background: none;
   }
+
   main article > .cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 20px;
   }
+
   main aside {
     padding: 50px 20px !important;
     max-height: 900px;
     border-radius: 0px;
   }
+
   main aside > .cards {
     grid-row-gap: 20px !important;
   }
@@ -729,24 +753,30 @@ footer div a {
   section {
     padding: 0px 20px !important;
   }
+
   section .cards {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 50px;
   }
+
   section .cards .cards-p2 :nth-child(1) {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: span 2;
   }
+
 }
 
+/* MAIN => ARTICLE - SECTION - FOOTER */
 @media only screen and (max-width: 650px) {
+
   main article > .cards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-row-gap: 20px;
   }
+
   main article > .cards :nth-child(4) .card-img img,
   main article > .cards :nth-child(6) .card-img img {
     width: 100%;
@@ -756,6 +786,7 @@ footer div a {
     display: flex;
     flex-direction: column;
   }
+
   section .cards .cards-p2 {
     display: flex;
     flex-direction: column;
@@ -769,51 +800,60 @@ footer div a {
     height: auto;
     text-align: left;
   }
+
   footer div {
     margin: 20px 0;
     width: 220px;
   }
+
   footer :nth-child(1) {
     position: static;
     top: 0px;
   }
+
 }
 
+/* HEADER - MAIN => ASIDE */
 @media only screen and (max-width: 390px) {
+
   header nav ul .nav-item a {
     padding: 30px 10px 30px 10px;
   }
+
   header .intro .intro-searchbar input {
     min-width: 100px;
   }
 
   main aside {
-    padding: 50px 10px !important;
+    padding: 50px 20px;
   }
+
   main aside .card .card-img {
     min-width: 150px;
   }
+
 }
 
-@media only screen and (max-width: 320px) {
-  main aside {
-    padding: 50px 5px !important;
-  }
+/* MAIN => ASIDE */
+@media only screen and (max-width: 340px) {
+
   main aside .card .card-img {
     min-width: 150px;
   }
-  main aside .cards .card .card-link .card-body {
+
+  main aside .card-link .card-body {
     padding: 15px 8px 5px 8px;
   }
-  main aside .cards .card .card-link .card-body .card-title {
+
+  main aside .card-body .card-title {
     font-size: 1rem;
   }
-  main aside .cards .card .card-link .card-body .card-text {
+
+  main aside .card-body .card-text {
     font-size: 0.7rem;
   }
-  main aside .cards .card .card-link .card-body .card-stars i.far.fa-star {
+
+  main aside .card-body .card-stars i.far.fa-star {
     font-size: 0.8rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
