@@ -27,8 +27,8 @@
 
 ## Notes sur la réalisation du projet
 - L'integration est faite sur l'éditeur Visual Studio Code 
-- [Sass](https://sass-lang.com/) est utilisé pour organiser le css.
-- Une partie JS est présente pour le système d'onglet, et certaine animation CSS en plus, dans une but pédagogique uniquement. Ils serront désactivé pour le rendu du projet afin de respecter les consignes. 
+- <del>[Sass](https://sass-lang.com/) est utilisé pour organiser le css.</del> Sass n'est plus présent. Uniquement un CSS refait sur mesure pour respecter les consignes.
+- <del>Une partie JS est présente pour le système d'onglet, et certaine animation CSS en plus, dans une but pédagogique uniquement. Ils serront désactivé pour le rendu du projet afin de respecter les consignes. </del> Le JS a été retirer.
 
 
 ## À FAIRE :
