@@ -21,6 +21,7 @@ body {
   font-family: "Raleway", "Josefin Sans", "Lato", sans-serif;
   overflow-x: hidden;
   margin-top: 1px;
+  box-sizing: border-box;
 
 }
 
@@ -80,6 +81,7 @@ header nav ul li a.signup {
   font-size: 28px;
   margin-bottom: 0.5rem;
 }
+
 .intro > p {
   font-size: 18px;
   margin-bottom: 2rem;
@@ -855,5 +857,19 @@ footer div a {
 
   main aside .card-body .card-stars i.far.fa-star {
     font-size: 0.8rem;
+  }
+
+  header .intro-searchbar input::placeholder {
+    font-size: .7rem;
+  }
+
+  .intro-searchbar input {
+    padding-left: 15px;
+  }
+
+  main > aside .card {
+
+    height: none;
+
   }
 }
