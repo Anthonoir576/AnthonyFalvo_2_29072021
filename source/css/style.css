@@ -372,6 +372,7 @@ main > aside .card-img {
   border-radius: 20px 0 0 20px;
   min-width: 200px;
   max-width: 200px;
+  height: 100%;
 }
 
 main > aside .card-img img {
@@ -761,7 +762,31 @@ footer div a {
 
 }
 
-/* MAIN => ARTICLE - SECTION - FOOTER */
+/*  FOOTER  */
+@media only screen and (max-width: 900px) {
+
+  footer {
+    padding: 0 30px !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    text-align: left;
+  }
+
+  footer div {
+    margin: 20px 0;
+    width: 220px;
+  }
+
+  footer :nth-child(1) {
+    position: static;
+    top: 0px;
+  }
+
+}
+
+/* MAIN => ARTICLE - SECTION */
 @media only screen and (max-width: 650px) {
 
   main article > .cards {
@@ -784,26 +809,6 @@ footer div a {
     display: flex;
     flex-direction: column;
   }
-
-  footer {
-    padding: 0 30px !important;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
-    text-align: left;
-  }
-
-  footer div {
-    margin: 20px 0;
-    width: 220px;
-  }
-
-  footer :nth-child(1) {
-    position: static;
-    top: 0px;
-  }
-
 }
 
 /* HEADER - MAIN => ASIDE */
