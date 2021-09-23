@@ -585,8 +585,15 @@ footer {
   height: 200px;
   background: #f2f2f2f2;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 74px;
+}
+
+footer div {
+  margin: 0 auto;
+  width: 350px;
+  min-width: 30%;
 }
 
 footer div a {
@@ -602,6 +609,7 @@ footer div a:hover {
 footer :nth-child(1) {
   position: relative;
   top: 12px;
+  margin-left: 0;
 }
 
 footer div h6 {
@@ -758,6 +766,10 @@ footer div a {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: span 2;
+  }
+
+  footer {
+    padding: 0 30px;
   }
 
 }
