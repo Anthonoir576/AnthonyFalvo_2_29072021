@@ -18,7 +18,7 @@
 /* Font - overflow - margin */
 body {
 
-  font-family: "Raleway", "Josefin Sans", "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   overflow-x: hidden;
   margin-top: 1px;
 
@@ -619,6 +619,7 @@ footer div h6 {
 
 footer div a {
   display: block;
+  max-width: 220px;
   margin-bottom: 0.5rem;
   color: rgba(0, 0, 0, 0.527);
 }
