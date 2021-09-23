@@ -1,7 +1,6 @@
 /* ############# RESET ############### */
 /* Reset des comportements par defauts */
 * {
-
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +8,6 @@
   text-decoration: none;
   color: black;
   font-size: 16px;
-
 }
 
 
@@ -17,11 +15,9 @@
 /* ############# BODY ############### */
 /* Font - overflow - margin */
 body {
-
   font-family: "Raleway", sans-serif;
   overflow-x: hidden;
   margin-top: 1px;
-
 }
 
 
@@ -32,9 +28,7 @@ header,
 main,
 section,
 footer {
-
   padding: 0 4rem;
-
 }
 
 
