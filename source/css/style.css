@@ -619,11 +619,22 @@ footer div h6 {
 
 footer div a {
   display: block;
-  max-width: 220px;
   margin-bottom: 0.5rem;
   color: rgba(0, 0, 0, 0.527);
 }
 
+/* FOOTER - Correction des links largeurs */
+footer :nth-child(1) a {
+  max-width: 220px;
+}
+
+footer :nth-child(2) a {
+  max-width: 170px;
+}
+
+footer :nth-child(3) a {
+  max-width: 120px;
+}
 
 
 /* ############# MEDIA QUERIE ############### */
