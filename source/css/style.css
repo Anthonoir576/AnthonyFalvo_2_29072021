@@ -886,7 +886,7 @@ footer :nth-child(3) a {
 
   main > aside .card {
 
-    height: none;
+    height: 0;
 
   }
 }
