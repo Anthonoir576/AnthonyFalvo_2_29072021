@@ -50,6 +50,12 @@ header nav ul {
   align-items: center;
 }
 
+header .navbar-logo {
+
+  transform: translateY(15px);
+
+}
+
 header nav ul li a {
   display: block;
   padding: 30px 30px 0 30px;
@@ -654,6 +660,12 @@ footer :nth-child(3) a {
   
   header {
     padding: 0!important;
+  }
+
+  header .navbar-logo {
+
+    transform: translateY(0px);
+  
   }
 
   header nav ul {
