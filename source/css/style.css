@@ -647,7 +647,7 @@ footer :nth-child(3) a {
 /* RESPONSIVE  */
 
 /*  MAIN => ARTICLE / ASIDE */
-@media only screen and (max-width: 1400px) and (min-width: 1201px) {
+@media only screen and (max-width: 1556px) and (min-width: 1201px) {
   
   main article > .cards {
     grid-template-columns: repeat(2, 1fr);
