@@ -243,7 +243,7 @@ header .fa-map-marker-alt {
 
 
 /* ############# MAIN ############### */
-/* < ETAT GENERAL > main - article - aside et card en général */
+/* < ETAT GENERAL > main - Hotel/hebergement - Populaire */
 main {
   display: grid;
   grid-template-columns: 3fr 1.5fr;
@@ -251,8 +251,8 @@ main {
   margin-bottom: 5rem;
 }
 
-main article,
-main aside {
+main #hotel,
+main .populaire {
   background: #f2f2f2f2;
   border-radius: 25px;
   padding: 50px 25px 50px 25px;
@@ -262,21 +262,14 @@ main .card {
   transition: all .35s ease-in-out;
 }
 
-main .card:hover {
-  transition: all .25s ease-in-out;
-  box-shadow: 0px 5px 20px #999;
-  filter: contrast(120%);
-  filter: saturate(140%);
-}
-
 /* ############# MAIN ############### */
-/* ARTICLE - 'Hébergements à Marseille' */
-main article h3 {
+/* Hotel/hebergement - 'Hébergements à Marseille' */
+main  #hotel h3 {
   font-size: 1.9rem;
   margin: 0 0 2rem 1rem;
 }
 
-main article > .cards {
+main  #hotel > .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -285,14 +278,14 @@ main article > .cards {
   grid-row-gap: 50px;
 }
 
-main article > .article-link a {
+main  #hotel > .article-link a {
   display: inline-block;
   margin: 4rem 0 0 1rem;
   font-size: 1.3rem;
   font-weight: 800;
 }
 
-main > article .card {
+main >  #hotel .card {
   width: 100%;
   padding: 5px;
   border-radius: 20px;
@@ -300,43 +293,43 @@ main > article .card {
   box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.301);
 }
 
-main > article .card-img {
+main >  #hotel .card-img {
   border-radius: 20px 20px 0 0;
   height: 180px;
   width: 100%;
 }
 
-main > article .card-img img {
+main >  #hotel .card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 
-main > article .card-body {
+main >  #hotel .card-body {
   padding: 15px 15px 5px 15px;
 }
 
-main > article .card h5 {
+main >  #hotel .card h5 {
   font-size: 22px;
   margin-bottom: 5px;
   min-height: 27px;
 }
 
-main > article .card p {
+main >  #hotel .card p {
   margin-bottom: 9px;
   min-height: 25px;
   font-size: 19px;
   font-weight: 400;
 }
 
-main > article .card i {
+main >  #hotel .card i {
   min-height: 22px;
 }
 
 /* ############# MAIN ############### */
-/* ASIDE - 'Les plus populaires' */
-main aside > .cards {
+/* Populaire - 'Les plus populaires' */
+main .populaire > .cards {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -344,7 +337,7 @@ main aside > .cards {
   grid-row-gap: 50px;
 }
 
-main > aside .card {
+main > .populaire .card {
   width: 100%;
   height: 210px;
   padding: 5px;
@@ -353,57 +346,57 @@ main > aside .card {
   box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.301);
 }
 
-main aside .aside-title {
+main .populaire .aside-title {
   display: flex;
   justify-content: space-between;
 }
 
-main aside .aside-title h3,
-main aside .aside-title i {
+main .populaire .aside-title h3,
+main .populaire .aside-title i {
   font-size: 1.9rem;
   margin-bottom: 2rem;
 }
 
-main > aside .card-link {
+main > .populaire .card-link {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
-main > aside .card-img {
+main > .populaire .card-img {
   border-radius: 20px 0 0 20px;
   min-width: 200px;
   max-width: 200px;
   height: 100%;
 }
 
-main > aside .card-img img {
+main > .populaire .card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px 0 0 20px;
 }
 
-main > aside .card-body {
+main > .populaire .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 15px 15px 5px 15px;
 }
 
-main > aside .card h5 {
+main > .populaire .card h5 {
   min-height: 27px;
   margin-bottom: 5px;
   font-size: 22px;
 }
 
-main > aside .card p {
+main > .populaire .card p {
   min-height: 25px;
   margin-bottom: 9px;
   font-size: 19px;
 }
 
-main > aside .card i {
+main > .populaire .card i {
   min-height: 22px;
 }
 
@@ -492,7 +485,10 @@ section .card {
   transition: all 0.35s ease-in-out;
 }
 
-section .card:hover {
+/* ALL CARD EFFECT */
+section .card:hover,
+main .card:hover, 
+main #hotel .card:hover {
   transition: all 0.25s ease-in-out;
   box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.85);
   filter: contrast(120%);
@@ -646,22 +642,22 @@ footer :nth-child(3) a {
 /* ############# MEDIA QUERIE ############### */
 /* RESPONSIVE  */
 
-/*  MAIN => ARTICLE / ASIDE */
+/*  MAIN => HOTEL/HEBERGEMENT / POPULAIRE */
 @media only screen and (max-width: 1556px) and (min-width: 1201px) {
   
-  main article > .cards {
+  main  #hotel > .cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 20px;
   }
 
-  main aside > .cards {
+  main .populaire > .cards {
     height: 100%;
   }
 
 }
 
-/* HEADER - MAIN => ARTICLE / ASIDE - SECTION - FOOTER */
+/* HEADER - MAIN => HOTEL/HEBERGEMENT / POPULAIRE - SECTION - FOOTER */
 @media only screen and (max-width: 1200px) {
   
   header {
@@ -754,25 +750,25 @@ footer :nth-child(3) a {
     flex-direction: column-reverse;
   }
 
-  main article {
+  main #hotel {
     padding: 50px 20px !important;
     margin-top: 3rem;
     background: none;
   }
 
-  main article > .cards {
+  main #hotel > .cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 20px;
   }
 
-  main aside {
+  main .populaire {
     padding: 50px 20px !important;
     max-height: 900px;
     border-radius: 0px;
   }
 
-  main aside > .cards {
+  main .populaire > .cards {
     grid-row-gap: 20px !important;
   }
 
@@ -822,17 +818,17 @@ footer :nth-child(3) a {
 
 }
 
-/* MAIN => ARTICLE - SECTION */
+/* MAIN => HOTEL/HEBERGEMENT - SECTION */
 @media only screen and (max-width: 650px) {
 
-  main article > .cards {
+  main  #hotel > .cards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-row-gap: 20px;
   }
 
-  main article > .cards :nth-child(4) .card-img img,
-  main article > .cards :nth-child(6) .card-img img {
+  main  #hotel > .cards :nth-child(4) .card-img img,
+  main  #hotel > .cards :nth-child(6) .card-img img {
     width: 100%;
   }
 
@@ -847,7 +843,7 @@ footer :nth-child(3) a {
   }
 }
 
-/* HEADER - MAIN => ASIDE */
+/* HEADER - MAIN => POPULAIRE */
 @media only screen and (max-width: 390px) {
 
   header nav ul .nav-item a {
@@ -858,11 +854,11 @@ footer :nth-child(3) a {
     min-width: 100px;
   }
 
-  main aside {
+  main .populaire {
     padding: 50px 20px;
   }
 
-  main aside .card .card-img {
+  main .populaire .card .card-img {
     min-width: 150px;
     max-width: 150px;
   }
@@ -871,27 +867,28 @@ footer :nth-child(3) a {
 
 }
 
-/* MAIN => ASIDE */
+/* MAIN => POPULAIRE */
 @media only screen and (max-width: 340px) {
 
-  main aside .card .card-img {
+  main .populaire .card .card-img {
     min-width: 100px;
     max-width: 100px;
   }
 
-  main aside .card-link .card-body {
+  main .populaire .card-link .card-body {
     padding: 15px 8px 5px 8px;
   }
 
-  main .card-body .card-title {
-    font-size: 1rem;
+
+  main #activity .card-body .card-title {
+    font-size: 1.5rem;
   }
 
-  main .card-body .card-text {
-    font-size: 0.7rem;
+  main #activity .card-body .card-text {
+    font-size: 1.5rem;
   }
 
-  main aside .card-body .card-stars i.far.fa-star {
+  main .populaire .card-body .card-stars i.far.fa-star {
     font-size: 0.8rem;
   }
 
@@ -903,12 +900,8 @@ footer :nth-child(3) a {
     padding-left: 15px;
   }
 
-  main .card-text > strong {
+  main #activity .card-text > strong {
     font-size: .7rem;
-  }
-
-  main aside .card {
-    height: 150px;
   }
 
 }
