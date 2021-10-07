@@ -187,19 +187,19 @@ header .fa-map-marker-alt {
 }
 
 /* ciblage des icones pour rectification */
-.intro-filter p:nth-child(4) i {
+.intro-filter p :nth-child(1) i {
   padding: 15px 15px;
 }
 
-.intro-filter p:nth-child(3) i {
+.intro-filter p :nth-child(3) i {
   padding: 15px 17px;
 }
 
-.intro-filter p:nth-child(2) i {
+.intro-filter p :nth-child(2) i {
   padding: 15px 19px;
 }
 
-.intro-filter p:nth-child(1) i {
+.intro-filter p :nth-child(1) i {
   padding: 15px 15px;
 }
 
