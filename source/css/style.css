@@ -505,13 +505,13 @@ section .cards-p1 {
   grid-column-gap: 50px;
 }
 
-section .cards-p1 :nth-child(1) {
+section .cards-p1 :nth-child(0n+1) {
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: span 2;
 }
 
-section .cards-p1 :nth-child(3) {
+section .cards-p1 :nth-child(0n+3) {
   grid-column-start: 2;
   grid-row-start: 2;
 }
@@ -526,7 +526,7 @@ section .cards-p2 {
   grid-column-gap: 50px;
 }
 
-section .cards-p2 :nth-child(1) {
+section .cards-p2 :nth-child(0n+1) {
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: span 2;
@@ -608,7 +608,7 @@ footer div a:hover {
   color: rgba(0, 0, 0, 0.274);
 }
 
-footer :nth-child(1) {
+footer :nth-child(0n+1) {
   position: relative;
   top: 12px;
   margin-left: 0;
@@ -626,15 +626,15 @@ footer div a {
 }
 
 /* FOOTER - Correction des links largeurs */
-footer :nth-child(1) a {
+footer :nth-child(0n+1) a {
   max-width: 220px;
 }
 
-footer :nth-child(2) a {
+footer :nth-child(0n+2) a {
   max-width: 170px;
 }
 
-footer :nth-child(3) a {
+footer :nth-child(0n+3) a {
   max-width: 120px;
 }
 
@@ -676,19 +676,19 @@ footer :nth-child(3) a {
     grid-template-areas: "logo register" "link1 link2";
   }
 
-  header nav ul :nth-child(1) {
+  header nav ul :nth-child(0n+1) {
     grid-area: logo;
   }
 
-  header nav ul :nth-child(2) {
+  header nav ul :nth-child(0n+2) {
     grid-area: link1;
   }
 
-  header nav ul :nth-child(3) {
+  header nav ul :nth-child(0n+3) {
     grid-area: link2;
   }
 
-  header nav ul :nth-child(4) {
+  header nav ul :nth-child(0n+4) {
     grid-area: register;
   }
 
@@ -782,7 +782,7 @@ footer :nth-child(3) a {
     grid-row-gap: 50px;
   }
 
-  section .cards .cards-p2 :nth-child(1) {
+  section .cards .cards-p2 :nth-child(0n+1) {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: span 2;
@@ -811,7 +811,7 @@ footer :nth-child(3) a {
     width: 220px;
   }
 
-  footer :nth-child(1) {
+  footer :nth-child(0n+1) {
     position: static;
     top: 0px;
   }
@@ -827,8 +827,8 @@ footer :nth-child(3) a {
     grid-row-gap: 20px;
   }
 
-  main  #hotel .cards :nth-child(4) .card-img img,
-  main  #hotel .cards :nth-child(6) .card-img img {
+  main  #hotel .cards :nth-child(0n+4) .card-img img,
+  main  #hotel .cards :nth-child(0n+6) .card-img img {
     width: 100%;
   }
 
