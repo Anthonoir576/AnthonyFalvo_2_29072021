@@ -642,15 +642,27 @@ footer :nth-child(0n+3) a {
 /* ############# MEDIA QUERIE ############### */
 /* RESPONSIVE  */
 
-/*  MAIN => HOTEL/HEBERGEMENT / POPULAIRE */
+/* RECTIFICATION MAIN TITLE AND TEXT */
 @media only screen and (max-width: 1556px) and (min-width: 1201px) {
+
+  main #hotel .cards .card .card-title,
+  main #hotel .cards .card .card-text {
+
+    font-size: 1.1rem;
+
+  }
+
+}
+
+/*  MAIN => HOTEL/HEBERGEMENT / POPULAIRE */
+@media only screen and (max-width: 1350px) and (min-width: 1201px) {
   
   main  #hotel > .cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 20px;
   }
-
+ 
   main .populaire > .cards {
     height: 100%;
   }
