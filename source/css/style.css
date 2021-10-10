@@ -855,11 +855,23 @@ footer :nth-child(0n+3) a {
 
   main #hotel {
     padding-bottom: 0!important;
+    padding-top: 0!important;
+  }
+
+  main  #hotel h3,
+  section h4,
+  main .populaire .aside-title h3 {
+    margin-left: 0;
+    font-size: 22px;
+  }
+
+  main .populaire .aside-title h3, main .populaire .aside-title i {
+    font-size: 22px;
   }
 
   main  #hotel > .article-link a {
 
-    margin: 2.5rem 0 0 .5rem;
+    margin: 2.5rem 0 0 0rem;
 
   }
 
