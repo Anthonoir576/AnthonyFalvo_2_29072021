@@ -660,6 +660,7 @@ footer :nth-child(0n+3) a {
 
 }
 
+/* CORRECTION TAILLE TEXT CARD => Populaire */
 @media only screen and (max-width: 1306px) and (min-width: 1279px) {
 
   main .populaire .card .card-title {
@@ -882,6 +883,7 @@ footer :nth-child(0n+3) a {
 
 }
 
+/* CORRECTION TAILLE TEXT CARD => Populaire + Hebergement */
 @media only screen and (max-width: 370px) {
 
   main > .populaire .card h5 {
@@ -925,10 +927,6 @@ footer :nth-child(0n+3) a {
     font-size: 1.5rem;
   }
 
-  main .populaire .card-body .card-stars i.far.fa-star {
-    font-size: 0.8rem;
-  }
-
   header .intro-searchbar input::placeholder {
     font-size: .7rem;
   }
@@ -943,6 +941,7 @@ footer :nth-child(0n+3) a {
 
 }
 
+/* CORRECTION TAILLE TEXT CARD => Populaire */
 @media only screen and (max-width: 315px) {
 
   main > .populaire .card h5 {
@@ -955,12 +954,5 @@ footer :nth-child(0n+3) a {
     font-size: 13px;
   }
 
-  
-  main #hotel .card i,
-  main .populaire .card i {
-
-    font-size: 11px;
-    
-  }
 
 }
