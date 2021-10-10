@@ -481,7 +481,6 @@ section {
 section h4 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  margin-left: 10px;
 }
 
 /* LAYOUT GRID  */
@@ -490,7 +489,7 @@ section .cards {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 50px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 section .card {
