@@ -657,8 +657,7 @@ footer :nth-child(0n+3) a {
 /* RECTIFICATION MAIN TITLE AND TEXT */
 @media only screen and (max-width: 1556px) and (min-width: 1201px) {
 
-  main #hotel .cards .card .card-title,
-  main #hotel .cards .card .card-text {
+  main #hotel .cards .card .card-title {
 
     font-size: 1.1rem;
 
