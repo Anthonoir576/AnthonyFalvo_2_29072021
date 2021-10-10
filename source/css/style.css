@@ -882,6 +882,28 @@ footer :nth-child(0n+3) a {
 
 }
 
+@media only screen and (max-width: 370px) {
+
+  main > .populaire .card h5 {
+
+    font-size: 16px;
+  }
+  
+  main > .populaire .card p {
+
+    font-size: 14px;
+  }
+
+  
+  main #hotel .card i,
+  main .populaire .card i {
+
+    font-size: 14px;
+    
+  }
+
+}
+
 /* MAIN => POPULAIRE */
 @media only screen and (max-width: 340px) {
 
@@ -917,6 +939,28 @@ footer :nth-child(0n+3) a {
 
   main #activity .card-text > strong {
     font-size: .7rem;
+  }
+
+}
+
+@media only screen and (max-width: 315px) {
+
+  main > .populaire .card h5 {
+
+    font-size: 15px;
+  }
+  
+  main > .populaire .card p {
+
+    font-size: 13px;
+  }
+
+  
+  main #hotel .card i,
+  main .populaire .card i {
+
+    font-size: 11px;
+    
   }
 
 }
