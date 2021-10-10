@@ -314,12 +314,12 @@ main >  #hotel .card-body {
 main >  #hotel .card h5 {
   font-size: 18px;
   margin-bottom: 1px;
-  min-height: 27px;
+  min-height: 25px;
 }
 
 main >  #hotel .card p {
   margin-bottom: 3px;
-  min-height: 25px;
+  min-height: 22px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -853,14 +853,48 @@ footer :nth-child(0n+3) a {
     width: 100%;
   }
 
+  main #hotel {
+    padding-bottom: 0!important;
+  }
+
+  main  #hotel > .article-link a {
+
+    margin: 2.5rem 0 0 .5rem;
+
+  }
+
+  main {
+    margin-bottom: 3.5rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  section .cards {
+    padding: 0;
+    grid-row-gap: 25px;
+  }
+
+  section .card {
+    min-height: 210px;
+  }
+
+  section .card-body {
+
+    padding: 15px 10px 15px 20px;
+  }
+
   section .cards .cards-p1 {
     display: flex;
     flex-direction: column;
+    grid-row-gap: 25px;
   }
 
   section .cards .cards-p2 {
     display: flex;
     flex-direction: column;
+    grid-row-gap: 25px;
   }
 }
 
@@ -883,8 +917,6 @@ footer :nth-child(0n+3) a {
     min-width: 150px;
     max-width: 150px;
   }
-
-  
 
 }
 
@@ -943,22 +975,6 @@ footer :nth-child(0n+3) a {
   main #activity .card-text > strong {
     font-size: .7rem;
   }
-
-}
-
-/* CORRECTION TAILLE TEXT CARD => Populaire */
-@media only screen and (max-width: 315px) {
-
-  main > .populaire .card h5 {
-
-    font-size: 15px;
-  }
-  
-  main > .populaire .card p {
-
-    font-size: 13px;
-  }
-
 
 }
 
