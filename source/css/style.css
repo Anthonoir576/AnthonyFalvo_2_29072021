@@ -361,6 +361,12 @@ main .populaire .aside-title i {
   margin-bottom: 2rem;
 }
 
+main .populaire .aside-title i {
+  transform: translateY(3px);
+  margin-left: 10px;
+}
+
+
 main > .populaire .card-link {
   display: flex;
   width: 100%;
@@ -910,8 +916,8 @@ footer :nth-child(0n+3) a {
 @media only screen and (max-width: 340px) {
 
   main .populaire .card .card-img {
-    min-width: 100px;
-    max-width: 100px;
+    min-width: 120px;
+    max-width: 120px;
   }
 
   main .populaire .card-link .card-body {
@@ -954,5 +960,40 @@ footer :nth-child(0n+3) a {
     font-size: 13px;
   }
 
+
+}
+
+/* MAIN => POPULAIRE */
+@media only screen and (max-width: 300px) {
+
+  main .populaire .card .card-img {
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  main .populaire .card-link .card-body {
+    padding: 15px 8px 5px 8px;
+  }
+
+
+  main #activity .card-body .card-title {
+    font-size: 1.5rem;
+  }
+
+  main #activity .card-body .card-text {
+    font-size: 1.5rem;
+  }
+
+  header .intro-searchbar input::placeholder {
+    font-size: .7rem;
+  }
+
+  .intro-searchbar input {
+    padding-left: 15px;
+  }
+
+  main #activity .card-text > strong {
+    font-size: .7rem;
+  }
 
 }
