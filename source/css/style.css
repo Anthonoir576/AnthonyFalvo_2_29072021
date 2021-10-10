@@ -600,7 +600,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 74px;
+  padding: 0 74px 0 3rem;
 }
 
 footer div {
@@ -809,7 +809,17 @@ footer :nth-child(0n+3) a {
   }
 
   footer {
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+
+  main  #hotel h3,
+  section h4,
+  main .populaire .aside-title h3 {
+    margin-left: 0;
+  }
+
+  main  #hotel > .article-link a {
+    margin: 2.5rem 0 0 0rem;
   }
 
 }
@@ -859,19 +869,9 @@ footer :nth-child(0n+3) a {
 
   main  #hotel h3,
   section h4,
-  main .populaire .aside-title h3 {
-    margin-left: 0;
+  main .populaire .aside-title h3,
+  main .populaire .aside-title i {
     font-size: 22px;
-  }
-
-  main .populaire .aside-title h3, main .populaire .aside-title i {
-    font-size: 22px;
-  }
-
-  main  #hotel > .article-link a {
-
-    margin: 2.5rem 0 0 0rem;
-
   }
 
   main {
