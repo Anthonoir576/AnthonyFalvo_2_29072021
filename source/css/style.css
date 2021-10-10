@@ -296,7 +296,7 @@ main >  #hotel .card {
 
 main >  #hotel .card-img {
   border-radius: 20px 20px 0 0;
-  height: 120px;
+  height: 123px;
   width: 100%;
 }
 
@@ -338,7 +338,7 @@ main .populaire > .cards {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
-  grid-row-gap: 40px;
+  grid-row-gap: 35px;
 }
 
 main > .populaire .card {
