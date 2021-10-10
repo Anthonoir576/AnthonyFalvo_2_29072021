@@ -265,7 +265,7 @@ main .card {
 /* ############# MAIN ############### */
 /* Hotel/hebergement - 'Hébergements à Marseille' */
 main  #hotel h3 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   margin: 0 0 2rem 1rem;
 }
 
@@ -357,7 +357,7 @@ main .populaire .aside-title {
 
 main .populaire .aside-title h3,
 main .populaire .aside-title i {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
